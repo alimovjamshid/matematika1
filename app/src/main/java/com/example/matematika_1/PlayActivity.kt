@@ -1,5 +1,6 @@
 package com.example.matematika_1
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
@@ -33,24 +34,24 @@ class PlayActivity : AppCompatActivity() {
         courseList = courseList + Item("Yonida", R.drawable.yonida)
         courseList = courseList + Item("To'g'ri to'rtburchak", R.drawable.tortburchak)
         courseList = courseList + Item("Birinchi-oxirgi", R.drawable.birinchi)
-        courseList = courseList + Item("Og'ir-yengil", R.drawable.img_1)
-        courseList = courseList + Item("Ertalab-kechqurun", R.drawable.img)
+        courseList = courseList + Item("Og'ir-yengil", R.drawable.ogir)
+        courseList = courseList + Item("Ertalab-kechqurun", R.drawable.ertalab)
         courseList = courseList + Item("Qo'shish-ayirish", R.drawable.qoshish)
-        courseList = courseList + Item("Kvadrat", R.drawable.img_2)
+        courseList = courseList + Item("Kvadrat", R.drawable.kvadrat)
         courseList = courseList + Item("1 soni va raqami", R.drawable.bir)
-        courseList = courseList + Item("Nuqta va chiziq", R.drawable.img_3)
+        courseList = courseList + Item("Nuqta va chiziq", R.drawable.nuqta)
         courseList = courseList + Item("2 soni va raqami", R.drawable.ikki)
         courseList = courseList + Item("3 soni va raqami", R.drawable.uch)
         courseList = courseList + Item("4 soni va raqami", R.drawable.tort)
         courseList = courseList + Item("5 soni va raqami", R.drawable.besh)
         courseList = courseList + Item("0 soni va raqami", R.drawable.nol)
         courseList = courseList + Item("6 soni va raqami", R.drawable.olti)
-        courseList = courseList + Item("7 soni va raqami", R.drawable.img_4)
-        courseList = courseList + Item("8 soni va raqami", R.drawable.img_5)
-        courseList = courseList + Item("To'g'ri chiziq yasash", R.drawable.img_6)
-        courseList = courseList + Item("Shar va kub", R.drawable.img_7)
-        courseList = courseList + Item("9 soni va raqami", R.drawable.img_8)
-        courseList = courseList + Item("10 soni va raqami", R.drawable.img_9)
+        courseList = courseList + Item("7 soni va raqami", R.drawable.yetti)
+        courseList = courseList + Item("8 soni va raqami", R.drawable.sakkiz)
+        courseList = courseList + Item("To'g'ri chiziq yasash", R.drawable.togrichiziq)
+        courseList = courseList + Item("Shar va kub", R.drawable.shar)
+        courseList = courseList + Item("9 soni va raqami", R.drawable.toqqiz)
+        courseList = courseList + Item("10 soni va raqami", R.drawable.on)
 
         // on below line we are initializing our course adapter
         // and passing course list and context.
@@ -68,6 +69,13 @@ class PlayActivity : AppCompatActivity() {
                 applicationContext, courseList[position].name + " selected",
                 Toast.LENGTH_SHORT
             ).show()
+            when(position) {
+                0 -> {
+                    val intent=Intent(this,Katta_kichikActivity::class.java)
+                    startActivity(intent)
+                }
+
+            }
         }
 
     }
