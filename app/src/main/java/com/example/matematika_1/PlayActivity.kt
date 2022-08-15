@@ -7,7 +7,8 @@ import android.widget.AdapterView
 import android.widget.GridView
 import android.widget.Toast
 
-class PlayActivity : AppCompatActivity() {
+open class PlayActivity : AppCompatActivity() {
+    val data= mutableListOf<String>()
     lateinit var courseGRV: GridView
     lateinit var courseList: List<Item>
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,24 +54,15 @@ class PlayActivity : AppCompatActivity() {
         courseList = courseList + Item("9 soni va raqami", R.drawable.toqqiz)
         courseList = courseList + Item("10 soni va raqami", R.drawable.on)
 
-        // on below line we are initializing our course adapter
-        // and passing course list and context.
         val courseAdapter = CustomAdapter(courseList = courseList, this@PlayActivity)
 
-        // on below line we are setting adapter to our grid view.
         courseGRV.adapter = courseAdapter
 
-        // on below line we are adding on item
-        // click listener for our grid view.
         courseGRV.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            // inside on click method we are simply displaying
-            // a toast message with course name.
-            Toast.makeText(
-                applicationContext, courseList[position].name + " selected",
-                Toast.LENGTH_SHORT
-            ).show()
+
             when(position) {
                 0 -> {
+                    data.add("ana")
                     val intent=Intent(this,Katta_kichikActivity::class.java)
                     startActivity(intent)
                 }
