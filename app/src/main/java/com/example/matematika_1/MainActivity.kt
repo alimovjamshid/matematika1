@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         val btn=findViewById<ImageView>(R.id.play)
         btn.setOnClickListener(View.OnClickListener {
-            btn.setColorFilter(Color.GRAY)
+            btn.setColorFilter(R.drawable.play)
             val intent=Intent(this,PlayActivity::class.java)
             startActivity(intent)
+            btn.setColorFilter(R.color.main)
         })
     }
 }
