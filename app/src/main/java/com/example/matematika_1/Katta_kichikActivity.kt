@@ -1,8 +1,7 @@
 package com.example.matematika_1
 
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
-import android.support.v4.app.FragmentActivity
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -15,10 +14,10 @@ class Katta_kichikActivity : PlayActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_katta_kichik)
 
-       /* val fragment=IkkiFragment()
+        val fragment=IkkiFragment()
         val bundle=Bundle()
-        bundle.putString("string",data.get(0).toString())
-        fragment.arguments=bundle*/
+        bundle.putString("10", data[0].toString())
+        fragment.arguments=bundle
         supportFragmentManager.beginTransaction().replace(R.id.fragment,IkkiFragment()).commit()
 
     }

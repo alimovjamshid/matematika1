@@ -8,7 +8,10 @@ import android.widget.GridView
 import android.widget.Toast
 
 open class PlayActivity : AppCompatActivity() {
-    val data= mutableListOf<String>()
+
+    companion object {
+        var data= mutableListOf<String>()
+    }
     lateinit var courseGRV: GridView
     lateinit var courseList: List<Item>
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,11 +65,31 @@ open class PlayActivity : AppCompatActivity() {
 
             when(position) {
                 0 -> {
-                    data.add("ana")
+                    data.clear()
+                    data.add("Qaysi mashina katta?")
+                    data.add("Qaysi qush kichik")
+                    data.add("Qaysi koptoklar bir xil kattalikda")
+                    data.add("Qaysi chelak kichik?")
+                    data.add("Qaysi shakllar bir xil kattalikda?")
                     val intent=Intent(this,Katta_kichikActivity::class.java)
                     startActivity(intent)
                 }
-
+                1->{
+                    data.clear()
+                    data.add("Qaysi archa baland?")
+                    data.add("Qaysi archa past?")
+                    data.add("Qaysi bino baland")
+                    data.add("Qaysi bino past?")
+                    data.add("Qaysi bino va archa baland?")
+                }
+                2->{
+                    data.clear()
+                    data.add("Enli taxtani ko ‘rsating")
+                    data.add("Ensiz taxtani ko ‘rsating")
+                    data.add("Qaysi lentalar bir xil kenglikda?")
+                    data.add("Bir xil o ‘lcham dagi narvonlarni ko ‘rsating")
+                    data.add("enli taxta bilan ensiz lentani ko 'rsating")
+                }
             }
         }
 
