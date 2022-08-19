@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.GridView
-import android.widget.Toast
 
 open class PlayActivity : AppCompatActivity() {
 
     companion object {
-        var data= mutableListOf<String>()
+        var datatext= ArrayList<String>()
+        var img= ArrayList<Int>()
     }
     lateinit var courseGRV: GridView
     lateinit var courseList: List<Item>
@@ -65,30 +65,40 @@ open class PlayActivity : AppCompatActivity() {
 
             when(position) {
                 0 -> {
-                    data.clear()
-                    data.add("Qaysi mashina katta?")
-                    data.add("Qaysi qush kichik")
-                    data.add("Qaysi koptoklar bir xil kattalikda")
-                    data.add("Qaysi chelak kichik?")
-                    data.add("Qaysi shakllar bir xil kattalikda?")
-                    val intent=Intent(this,Katta_kichikActivity::class.java)
+                    datatext.clear()
+                    datatext.add("Qaysi mashina katta?")
+                    datatext.add("Qaysi qush kichik")
+                    datatext.add("Qaysi koptoklar bir xil kattalikda")
+                    datatext.add("Qaysi chelak kichik?")
+                    datatext.add("Qaysi shakllar bir xil kattalikda?")
+
+                    img.clear()
+                    img.add(R.drawable.img)
+                    img.add(R.drawable.img_1)
+                    img.add(R.drawable.img_3)
+                    img.add(R.drawable.img_2)
+                    val intent=Intent(this,TestActivity::class.java)
                     startActivity(intent)
                 }
                 1->{
-                    data.clear()
-                    data.add("Qaysi archa baland?")
-                    data.add("Qaysi archa past?")
-                    data.add("Qaysi bino baland")
-                    data.add("Qaysi bino past?")
-                    data.add("Qaysi bino va archa baland?")
+                    datatext.clear()
+                    datatext.add("Qaysi archa baland?")
+                    datatext.add("Qaysi archa past?")
+                    datatext.add("Qaysi bino baland")
+                    datatext.add("Qaysi bino past?")
+                    datatext.add("Qaysi bino va archa baland?")
+                    val intent=Intent(this,TestActivity::class.java)
+                    startActivity(intent)
                 }
                 2->{
-                    data.clear()
-                    data.add("Enli taxtani ko ‘rsating")
-                    data.add("Ensiz taxtani ko ‘rsating")
-                    data.add("Qaysi lentalar bir xil kenglikda?")
-                    data.add("Bir xil o ‘lcham dagi narvonlarni ko ‘rsating")
-                    data.add("enli taxta bilan ensiz lentani ko 'rsating")
+                    datatext.clear()
+                    datatext.add("Enli taxtani ko ‘rsating")
+                    datatext.add("Ensiz taxtani ko ‘rsating")
+                    datatext.add("Qaysi lentalar bir xil kenglikda?")
+                    datatext.add("Bir xil o ‘lcham dagi narvonlarni ko ‘rsating")
+                    datatext.add("enli taxta bilan ensiz lentani ko 'rsating")
+                    val intent=Intent(this,TestActivity::class.java)
+                    startActivity(intent)
                 }
             }
         }

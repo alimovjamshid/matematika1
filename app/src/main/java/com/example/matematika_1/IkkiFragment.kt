@@ -28,19 +28,34 @@ class IkkiFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var i=0
 
         val image1:ImageView=view.findViewById(R.id.ikki1)
         val image2:ImageView=view.findViewById(R.id.ikki2)
         val textView:TextView=view.findViewById(R.id.answer)
 
-        var a=arguments!!.getString("10")
+        val bundle = this.arguments
+        val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
+        textView.text=message[0]
 
+        val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
+        image1.setImageResource(img[0])
+        image2.setImageResource(img[1])
 
         image1.setOnClickListener(View.OnClickListener {
-            image1.setImageResource(R.drawable.uch)
+            i++
+            if(i<=1) {
+                textView.setText(message[1])
+                image1.setImageResource(img[3])
+                image2.setImageResource(img[2])
+                Toast.makeText(context,"True",Toast.LENGTH_SHORT).show()
+            }
+            else{
+
+            }
         })
         image2.setOnClickListener(View.OnClickListener {
-            textView.setText("ma")
+            Toast.makeText(context,"False",Toast.LENGTH_SHORT).show()
         })
     }
 }
