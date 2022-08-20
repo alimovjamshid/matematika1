@@ -68,6 +68,7 @@ open class PlayActivity : AppCompatActivity() {
 
             when(position) {
                 0 -> {
+                    //Katta-kichik
                     datatext.clear()
                     datatext.add("Qaysi mashina katta?")
                     datatext.add("Qaysi qush kichik?")
@@ -100,6 +101,7 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 1->{
+                    //Baland-past
                     datatext.clear()
                     datatext.add("Qaysi archa baland?")
                     datatext.add("Qaysi archa past?")
@@ -115,11 +117,11 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_13)
                     img.add(R.drawable.img_14)
                     //bino baland
-                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_14)
                     img.add(R.drawable.img_16)
                     img.add(R.drawable.img_17)
                     //bino past
-                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_14)
                     img.add(R.drawable.img_16)
                     img.add(R.drawable.img_17)
 
@@ -127,14 +129,124 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 2->{
+                    //Keng-tor
                     datatext.clear()
                     datatext.add("Enli taxtani ko ‘rsating")
                     datatext.add("Ensiz taxtani ko ‘rsating")
-                    datatext.add("Qaysi lentalar bir xil kenglikda?")
-                    datatext.add("Bir xil o ‘lchamdagi narvonlarni ko ‘rsating")
-                    datatext.add("enli taxta bilan ensiz lentani ko 'rsating")
+                    datatext.add("Qaysi lenta enli?")
+                    datatext.add("Qaysi narvon ensiz?")
+                    datatext.add("Enli taxta bilan ensiz lentani ko 'rsating")
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
+                }
+                3->{
+                    //Qalin-yupqa
+                    datatext.clear()
+                    datatext.add("Qaysi kitob qalin?")
+                    datatext.add("Qaysi kitob yupqa?")
+                    datatext.add("Qaysi daraxt qalin?")
+                    datatext.add("Qaysi daraxt yupqa?")
+                    datatext.add("Qalin kitob bilan yupqa daraxtni ko'rsating")
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
+                }
+                4->{
+                    //Uzun-qisqa
+                    datatext.clear()
+                    datatext.add("Qaysi tasma uzun?")
+                    datatext.add("Qaysi tasma qisqa?")
+                    datatext.add("Rasmga qarab uzun yo'lni belgilang")
+                    datatext.add("Rasmga qarab qisqa yo'lni belgilang")
+                    datatext.add("Uzun yo'lni va qisqa tasamani ko'rsating")
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
+                }
+                5->{
+                    //Doira
+
+                }
+                6->{
+                    //Ko'p-kam
+                    datatext.clear()
+                    datatext.add("Qaysi rasmdagi jo'jalar ko'p?")
+                    datatext.add("Qaysi rasmdagi jo'jalar kam?")
+                    datatext.add("Qaysi qalamdondagi qalamlar ko'p?")
+                    datatext.add("Qaysi qalamdondagi qalamlar kam?")
+                    datatext.add("Ko'p jo'jalar va kam qalamlarni belgilang")
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
+                }
+                7->{
+                    //Barovar-teng
+                }
+                8->{
+                    //Yaqin-uzoq
+                }
+                9->{
+                    //O'ngda-chapda
+                }
+                10->{
+                    //Uchburchak
+                }
+                11->{
+                    //tonida
+                }
+                12->{
+                    //togri tortburchak
+                }
+                13->{
+                    //birinchi va oxirgi
+                }
+                14->{
+                    //ogir yengil
+                }
+                15->{
+                    //ertalab kunduzi
+                }
+                16->{
+                    //qoshish ayirish
+                }
+                17->{
+                    //Kvadrat
+                }
+                18->{
+                    //1 soni va raqami
+                }
+                19->{
+                    //Nuqta va chiziq
+                }
+                20->{
+                    //2 soni va raqami
+                }
+                21->{
+                    //3 soni va raqami
+                }
+                22->{
+                    //4 soni va raqami
+                }
+                23->{
+                    //5 soni va raqami
+                }
+                24->{
+                    //6 soni va raqami
+                }
+                25->{
+                    //7 soni va raqami
+                }
+                26->{
+                    //8 soni va raqami
+                }
+                27->{
+                    //To'g'ri chiziq yasash
+                }
+                28->{
+                    //Shar va kub
+                }
+                29->{
+                    //9 soni va raqami
+                }
+                30->{
+                    //10 soni va raqami
                 }
             }
         }
