@@ -1,15 +1,14 @@
-package com.example.matematika_1
+package com.example.matematika_1.Fragment
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.matematika_1.R
 
 class IkkiFragment : Fragment() {
 
@@ -23,7 +22,7 @@ class IkkiFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance()=IkkiFragment
+        fun newInstance()= IkkiFragment
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -57,5 +56,6 @@ class IkkiFragment : Fragment() {
         image2.setOnClickListener(View.OnClickListener {
             Toast.makeText(context,"False",Toast.LENGTH_SHORT).show()
         })
+
     }
 }

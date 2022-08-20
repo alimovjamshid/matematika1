@@ -1,7 +1,9 @@
-package com.example.matematika_1
+package com.example.matematika_1.Activity
 
 
 import android.os.Bundle
+import com.example.matematika_1.Fragment.IkkiFragment
+import com.example.matematika_1.R
 
 
 class TestActivity : PlayActivity() {

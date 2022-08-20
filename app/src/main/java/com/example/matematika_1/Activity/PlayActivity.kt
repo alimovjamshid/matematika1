@@ -1,10 +1,13 @@
-package com.example.matematika_1
+package com.example.matematika_1.Activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.GridView
+import com.example.matematika_1.Adapter.CustomAdapter
+import com.example.matematika_1.Item
+import com.example.matematika_1.R
 
 open class PlayActivity : AppCompatActivity() {
 
@@ -67,17 +70,33 @@ open class PlayActivity : AppCompatActivity() {
                 0 -> {
                     datatext.clear()
                     datatext.add("Qaysi mashina katta?")
-                    datatext.add("Qaysi qush kichik")
-                    datatext.add("Qaysi koptoklar bir xil kattalikda")
+                    datatext.add("Qaysi qush kichik?")
+                    datatext.add("Qaysi koptok katta?")
                     datatext.add("Qaysi chelak kichik?")
                     datatext.add("Qaysi shakllar bir xil kattalikda?")
 
                     img.clear()
+                    //mashina
                     img.add(R.drawable.img)
                     img.add(R.drawable.img_1)
+                    //qush
                     img.add(R.drawable.img_3)
                     img.add(R.drawable.img_2)
-                    val intent=Intent(this,TestActivity::class.java)
+                    //koptok
+                    img.add(R.drawable.img_4)
+                    img.add(R.drawable.img_5)
+                    img.add(R.drawable.img_6)
+                    //Chelak
+                    img.add(R.drawable.img_7)
+                    img.add(R.drawable.img_8)
+                    img.add(R.drawable.img_8)
+                    //bir xil kattalik
+                    img.add(R.drawable.img_9)
+                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_11)
+                    img.add(R.drawable.img_12)
+
+                    val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 1->{
@@ -87,7 +106,24 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.add("Qaysi bino baland")
                     datatext.add("Qaysi bino past?")
                     datatext.add("Qaysi bino va archa baland?")
-                    val intent=Intent(this,TestActivity::class.java)
+
+                    img.clear()
+                    //archa balan
+                    img.add(R.drawable.img_13)
+                    img.add(R.drawable.img_14)
+                    //archa past
+                    img.add(R.drawable.img_13)
+                    img.add(R.drawable.img_14)
+                    //bino baland
+                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
+                    //bino past
+                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
+
+                    val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 2->{
@@ -95,9 +131,9 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.add("Enli taxtani ko ‘rsating")
                     datatext.add("Ensiz taxtani ko ‘rsating")
                     datatext.add("Qaysi lentalar bir xil kenglikda?")
-                    datatext.add("Bir xil o ‘lcham dagi narvonlarni ko ‘rsating")
+                    datatext.add("Bir xil o ‘lchamdagi narvonlarni ko ‘rsating")
                     datatext.add("enli taxta bilan ensiz lentani ko 'rsating")
-                    val intent=Intent(this,TestActivity::class.java)
+                    val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
             }

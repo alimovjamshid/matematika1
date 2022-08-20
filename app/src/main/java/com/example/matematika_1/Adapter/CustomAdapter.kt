@@ -1,4 +1,4 @@
-package com.example.matematika_1
+package com.example.matematika_1.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.matematika_1.Item
+import com.example.matematika_1.R
 
 internal class CustomAdapter(
     // on below line we are creating two

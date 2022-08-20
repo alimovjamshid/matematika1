@@ -1,4 +1,4 @@
-package com.example.matematika_1
+package com.example.matematika_1.Fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import com.example.matematika_1.R
 
 class tortFragment : Fragment() {
 
@@ -21,7 +22,7 @@ class tortFragment : Fragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance()=tortFragment
+        fun newInstance()= tortFragment
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
