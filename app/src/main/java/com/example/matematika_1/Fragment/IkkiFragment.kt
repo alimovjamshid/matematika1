@@ -1,13 +1,20 @@
 package com.example.matematika_1.Fragment
 
+import android.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentTransaction
+import android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN
+import android.support.v4.internal.view.SupportSubMenu
+import android.support.v7.view.SupportMenuInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.matematika_1.Activity.PlayActivity
 import com.example.matematika_1.R
 
 class IkkiFragment : Fragment() {
@@ -41,20 +48,33 @@ class IkkiFragment : Fragment() {
         image1.setImageResource(img[0])
         image2.setImageResource(img[1])
 
+        val mFragment = UchFragment()
+        val mBundle = Bundle()
+        mBundle.putStringArrayList("mText", message)
+        mBundle.putIntegerArrayList("image", img)
+        mFragment.arguments = mBundle
+
+
+
         image1.setOnClickListener(View.OnClickListener {
             i++
             if(i<=1) {
                 textView.setText(message[1])
-                image1.setImageResource(img[3])
-                image2.setImageResource(img[2])
+                image1.setImageResource(img[2])
+                image2.setImageResource(img[3])
                 Toast.makeText(context,"True",Toast.LENGTH_SHORT).show()
             }
             else{
-
+                Toast.makeText(context,"False",Toast.LENGTH_SHORT).show()
             }
         })
         image2.setOnClickListener(View.OnClickListener {
-            Toast.makeText(context,"False",Toast.LENGTH_SHORT).show()
+            if(i>=1) {
+                fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
+            }
+            else {
+                Toast.makeText(context, "False", Toast.LENGTH_SHORT).show()
+            }
         })
 
     }

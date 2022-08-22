@@ -17,6 +17,7 @@ class TestActivity : PlayActivity() {
         mBundle.putStringArrayList("mText", datatext)
         mBundle.putIntegerArrayList("image", img)
         mFragment.arguments = mBundle
-        supportFragmentManager.beginTransaction().add(R.id.fragment,mFragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment,mFragment)
+        supportFragmentManager.beginTransaction().replace(R.id.fragment,mFragment).commit()
     }
 }
