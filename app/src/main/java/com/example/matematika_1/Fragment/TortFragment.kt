@@ -1,5 +1,6 @@
 package com.example.matematika_1.Fragment
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -8,9 +9,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.matematika_1.R
+import com.example.matematika_1.dialog.MondatDialog
+import com.example.matematika_1.dialog.RightDialog
+import com.example.matematika_1.dialog.Wrongdialog
 
 class tortFragment : Fragment() {
-
+    private var BgMusic: MediaPlayer? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,8 +32,12 @@ class tortFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val rightDialog = RightDialog()
+        val wrongdialog= Wrongdialog()
+        val mondatDialog=MondatDialog()
 
-        var i=0;
+        var i=false
+        var j=false
         val bundle = this.arguments
         val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
@@ -45,5 +53,38 @@ class tortFragment : Fragment() {
         image2.setImageResource(img[11])
         image3.setImageResource(img[12])
         image4.setImageResource(img[13])
+
+        image1.setOnClickListener {
+            i=true
+            BgMusic = MediaPlayer.create(context, R.raw.right)
+            BgMusic?.start()
+            if(i and j){
+                mondatDialog.show(fragmentManager,"afghjk")
+            }
+            else{
+                rightDialog.show(fragmentManager,"dsjakh")
+            }
+        }
+        image2.setOnClickListener{
+            j=true
+            BgMusic = MediaPlayer.create(context, R.raw.right)
+            BgMusic?.start()
+            if(i and j){
+                mondatDialog.show(fragmentManager,"afgdhs")
+            }
+            else{
+                rightDialog.show(fragmentManager,"dsjakh")
+            }
+        }
+        image3.setOnClickListener{
+            wrongdialog.show(fragmentManager,"dsjakh")
+            BgMusic = MediaPlayer.create(context, R.raw.wrong)
+            BgMusic?.start()
+        }
+        image4.setOnClickListener{
+            wrongdialog.show(fragmentManager,"dsjakh")
+            BgMusic = MediaPlayer.create(context, R.raw.wrong)
+            BgMusic?.start()
+        }
     }
 }

@@ -13,4 +13,8 @@
     <style name="Mytheme" parent="Theme.AppCompat.Light.NoActionBar">
 
     </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog">
+
+    </style>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.matematika_1.Fragment
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -9,9 +10,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.example.matematika_1.R
+import com.example.matematika_1.dialog.RightDialog
+import com.example.matematika_1.dialog.Wrongdialog
 
 class UchFragment : Fragment() {
-
+    private var BgMusic: MediaPlayer? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,6 +32,8 @@ class UchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val rightDialog = RightDialog()
+        val wrongdialog= Wrongdialog()
 
         var i=0;
         val bundle = this.arguments
@@ -54,31 +59,40 @@ class UchFragment : Fragment() {
         image1.setOnClickListener(View.OnClickListener {
             i++
             if(i<=1) {
+                BgMusic = MediaPlayer.create(context, R.raw.right)
+                BgMusic?.start()
+                rightDialog.show(fragmentManager,"dsjakh")
+
                 textView.setText(message[3])
                 image1.setImageResource(img[7])
                 image2.setImageResource(img[8])
                 image3.setImageResource(img[9])
-                Toast.makeText(context,"True", Toast.LENGTH_SHORT).show()
             }
             else{
-                Toast.makeText(context,"False", Toast.LENGTH_SHORT).show()
+                wrongdialog.show(fragmentManager,"dsjakh")
+                BgMusic = MediaPlayer.create(context, R.raw.wrong)
+                BgMusic?.start()
             }
-            image2.setOnClickListener(View.OnClickListener {
-                if(i>=1) {
-                    //fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
-                }
-                else {
-                    Toast.makeText(context, "False", Toast.LENGTH_SHORT).show()
-                }
-            })
-            image3.setOnClickListener(View.OnClickListener {
-                if(i>=1) {
-                    fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
-                }
-                else {
-                    Toast.makeText(context, "False", Toast.LENGTH_SHORT).show()
-                }
-            })
+        })
+
+        image2.setOnClickListener(View.OnClickListener {
+            wrongdialog.show(fragmentManager,"dsjakh")
+            BgMusic = MediaPlayer.create(context, R.raw.wrong)
+            BgMusic?.start()
+        })
+        image3.setOnClickListener(View.OnClickListener {
+            if(i>=1) {
+                BgMusic = MediaPlayer.create(context, R.raw.right)
+                BgMusic?.start()
+                rightDialog.show(fragmentManager,"dsjakh")
+
+                fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
+            }
+            else {
+                wrongdialog.show(fragmentManager,"dsjakh")
+                BgMusic = MediaPlayer.create(context, R.raw.wrong)
+                BgMusic?.start()
+            }
         })
     }
 }
