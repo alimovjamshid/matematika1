@@ -61,6 +61,10 @@ class IkkiFragment : Fragment() {
         image1.setImageResource(img[0])
         image2.setImageResource(img[1])
 
+        var t:Int=bundle?.getInt("t") as Int
+        var f:Int=bundle?.getInt("f") as Int
+
+
         val mFragment = UchFragment()
         val mBundle = Bundle()
         mBundle.putStringArrayList("mText", message)
@@ -70,6 +74,7 @@ class IkkiFragment : Fragment() {
         image1.setOnClickListener(View.OnClickListener {
             i++
             if(i<=1) {
+                t++
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager,"dsjakh")
@@ -79,21 +84,23 @@ class IkkiFragment : Fragment() {
                 image2.setImageResource(img[3])
             }
             else{
+                f++
                 wrongdialog.show(fragmentManager,"dsjakh")
                 BgMusic = MediaPlayer.create(context, R.raw.wrong)
                 BgMusic?.start()
             }
         })
         image2.setOnClickListener(View.OnClickListener {
-//            val dialog = RightDialog()
             if(i>=1) {
+                t++
+                Toast.makeText(context, t.toString(), Toast.LENGTH_SHORT).show()
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
-//                dialog.show(fragmentManager,"right_dialog")
                 rightDialog.show(fragmentManager, "dsjakh")
                 fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
             }
             else {
+                f++
                 wrongdialog.show(fragmentManager,"dsjakh")
                 BgMusic = MediaPlayer.create(context, R.raw.wrong)
                 BgMusic?.start()

@@ -12,6 +12,8 @@ import com.example.matematika_1.R
 open class PlayActivity : AppCompatActivity() {
 
     companion object {
+        val t=0
+        val f=0
         var datatext= ArrayList<String>()
         var img= ArrayList<Int>()
     }

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.example.matematika_1.R
 
@@ -23,6 +24,11 @@ class MondatDialog : DialogFragment() {
 
         val btn1:Button=view.findViewById(R.id.button)
         val btn2:Button=view.findViewById(R.id.button2)
+        val txt1:TextView=view.findViewById(R.id.textView3)
+        val txt2:TextView=view.findViewById(R.id.textView4)
+
+        txt1.setText(txt1.text.toString()+"ana")
+        txt2.setText(txt2.text.toString()+"a")
 
         btn1.setOnClickListener{
             Toast.makeText(context, "salom", Toast.LENGTH_SHORT).show()
