@@ -85,7 +85,6 @@ class UchFragment : Fragment() {
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager,"dsjakh")
-
                 fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
             }
             else {

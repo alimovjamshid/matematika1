@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.example.matematika_1.R
 import com.example.matematika_1.dialog.MondatDialog
 import com.example.matematika_1.dialog.RightDialog
@@ -39,8 +40,12 @@ class tortFragment : Fragment() {
         var i=false
         var j=false
         val bundle = this.arguments
+
         val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
+
+        var t:Int=bundle?.getInt("t") as Int
+        var f:Int=bundle?.getInt("f") as Int
 
         val textView:TextView=view.findViewById(R.id.answer)
         val image1: ImageView =view.findViewById(R.id.tort1)

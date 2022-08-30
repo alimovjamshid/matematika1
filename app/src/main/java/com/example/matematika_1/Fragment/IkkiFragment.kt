@@ -44,6 +44,9 @@ class IkkiFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var t=0
+        var f=0
+
         var i=0
         val rightDialog = RightDialog()
         val wrongdialog=Wrongdialog()
@@ -60,10 +63,6 @@ class IkkiFragment : Fragment() {
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
         image1.setImageResource(img[0])
         image2.setImageResource(img[1])
-
-        var t:Int=bundle?.getInt("t") as Int
-        var f:Int=bundle?.getInt("f") as Int
-
 
         val mFragment = UchFragment()
         val mBundle = Bundle()
@@ -93,7 +92,6 @@ class IkkiFragment : Fragment() {
         image2.setOnClickListener(View.OnClickListener {
             if(i>=1) {
                 t++
-                Toast.makeText(context, t.toString(), Toast.LENGTH_SHORT).show()
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager, "dsjakh")
