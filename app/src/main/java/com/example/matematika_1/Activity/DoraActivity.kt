@@ -1,6 +1,5 @@
 package com.example.matematika_1.Activity
 
-import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -21,11 +20,11 @@ class DoraActivity : AppCompatActivity() {
         val textView=findViewById<TextView>(R.id.textView2)
 
         textView.setText("Bu doira bo'la oladimi?")
-        imageView.setImageResource(R.drawable.img_39)
+        imageView.setImageResource(R.drawable.img_39a)
 
         btnha.setOnClickListener(View.OnClickListener {
             Toast.makeText(applicationContext,"True",Toast.LENGTH_SHORT).show()
-            imageView.setImageResource(R.drawable.img_40)
+            imageView.setImageResource(R.drawable.img_40a)
         })
         btnyoq.setOnClickListener(View.OnClickListener {
 

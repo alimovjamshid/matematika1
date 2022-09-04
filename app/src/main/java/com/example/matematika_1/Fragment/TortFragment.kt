@@ -37,13 +37,14 @@ class tortFragment : Fragment() {
         val wrongdialog= Wrongdialog()
         val mondatDialog=MondatDialog()
 
+        val mBundle = Bundle()
         var i=false
         var j=false
+
         val bundle = this.arguments
 
         val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
-
         var t:Int=bundle?.getInt("t") as Int
         var f:Int=bundle?.getInt("f") as Int
 
@@ -52,6 +53,9 @@ class tortFragment : Fragment() {
         val image2: ImageView =view.findViewById(R.id.tort2)
         val image3:ImageView=view.findViewById(R.id.tort3)
         val image4:ImageView=view.findViewById(R.id.tort4)
+
+        val mFragment = MondatDialog()
+        mFragment.arguments = mBundle
 
         textView.setText(message[4])
         image1.setImageResource(img[10])
@@ -64,9 +68,12 @@ class tortFragment : Fragment() {
             BgMusic = MediaPlayer.create(context, R.raw.right)
             BgMusic?.start()
             if(i and j){
+                mBundle.putInt("t",t)
+                mBundle.putInt("f",f)
                 mondatDialog.show(fragmentManager,"afghjk")
             }
             else{
+                t++
                 rightDialog.show(fragmentManager,"dsjakh")
             }
         }
@@ -75,9 +82,13 @@ class tortFragment : Fragment() {
             BgMusic = MediaPlayer.create(context, R.raw.right)
             BgMusic?.start()
             if(i and j){
-                mondatDialog.show(fragmentManager,"afgdhs")
+                mBundle.putInt("t",t)
+                mBundle.putInt("f",f)
+                mFragment.arguments = mBundle
+                mondatDialog.show(fragmentManager,"dfghjk")
             }
             else{
+                t++
                 rightDialog.show(fragmentManager,"dsjakh")
             }
         }
@@ -85,11 +96,13 @@ class tortFragment : Fragment() {
             wrongdialog.show(fragmentManager,"dsjakh")
             BgMusic = MediaPlayer.create(context, R.raw.wrong)
             BgMusic?.start()
+            f++
         }
         image4.setOnClickListener{
             wrongdialog.show(fragmentManager,"dsjakh")
             BgMusic = MediaPlayer.create(context, R.raw.wrong)
             BgMusic?.start()
+            f++
         }
     }
 }

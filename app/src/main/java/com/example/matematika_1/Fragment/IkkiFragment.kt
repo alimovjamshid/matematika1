@@ -1,28 +1,14 @@
 package com.example.matematika_1.Fragment
 
-import android.app.AlertDialog
-import android.app.Dialog
-import android.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN
-import android.content.Context
-import android.content.DialogInterface
-import android.media.AudioManager
 import android.media.MediaPlayer
-import android.media.SoundPool
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentTransaction
-import android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN
-import android.support.v4.internal.view.SupportSubMenu
-import android.support.v7.view.SupportMenuInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import com.example.matematika_1.Activity.PlayActivity
 import com.example.matematika_1.R
 import com.example.matematika_1.dialog.RightDialog
 import com.example.matematika_1.dialog.Wrongdialog
@@ -95,6 +81,8 @@ class IkkiFragment : Fragment() {
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager, "dsjakh")
+                mBundle.putInt("t",t)
+                mBundle.putInt("f",f)
                 fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
             }
             else {

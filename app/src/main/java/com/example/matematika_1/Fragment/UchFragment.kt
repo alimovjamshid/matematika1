@@ -37,8 +37,10 @@ class UchFragment : Fragment() {
 
         var i=0;
         val bundle = this.arguments
-        val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
-        val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
+        val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>  //answer
+        val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> //image
+        var t:Int=bundle?.getInt("t") as Int  //true
+        var f:Int=bundle?.getInt("f") as Int  //false
 
         val mFragment = tortFragment()
         val mBundle = Bundle()
@@ -59,16 +61,17 @@ class UchFragment : Fragment() {
         image1.setOnClickListener(View.OnClickListener {
             i++
             if(i<=1) {
+                t++
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager,"dsjakh")
-
                 textView.setText(message[3])
                 image1.setImageResource(img[7])
                 image2.setImageResource(img[8])
                 image3.setImageResource(img[9])
             }
             else{
+                f++
                 wrongdialog.show(fragmentManager,"dsjakh")
                 BgMusic = MediaPlayer.create(context, R.raw.wrong)
                 BgMusic?.start()
@@ -76,15 +79,19 @@ class UchFragment : Fragment() {
         })
 
         image2.setOnClickListener(View.OnClickListener {
+            f++
             wrongdialog.show(fragmentManager,"dsjakh")
             BgMusic = MediaPlayer.create(context, R.raw.wrong)
             BgMusic?.start()
         })
         image3.setOnClickListener(View.OnClickListener {
             if(i>=1) {
+                t++
                 BgMusic = MediaPlayer.create(context, R.raw.right)
                 BgMusic?.start()
                 rightDialog.show(fragmentManager,"dsjakh")
+                mBundle.putInt("t",t)
+                mBundle.putInt("f",f)
                 fragmentManager!!.beginTransaction().replace(R.id.fragment,mFragment).commit()
             }
             else {

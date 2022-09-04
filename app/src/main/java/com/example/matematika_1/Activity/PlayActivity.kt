@@ -72,8 +72,8 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.clear()
                     datatext.add("Qaysi mashina katta?")
                     datatext.add("Qaysi qush kichik?")
-                    datatext.add("Qaysi koptok katta?")
-                    datatext.add("Qaysi chelak katta?")
+                    datatext.add("Qaysi hayvon katta?")
+                    datatext.add("Qaysi meva kichik?")
                     datatext.add("Qaysi shakllar bir xil kattalikda?")
 
                     img.clear()
@@ -84,18 +84,18 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.i)
                     img.add(R.drawable.i_1)  //true
                     //koptok
-                    img.add(R.drawable.im_4)  //true
-                    img.add(R.drawable.im_5)
-                    img.add(R.drawable.im_6)
+                    img.add(R.drawable.img_1)  //true
+                    img.add(R.drawable.img)
+                    img.add(R.drawable.img_3)
                     //Chelak
-                    img.add(R.drawable.im_8)
-                    img.add(R.drawable.im_8)
-                    img.add(R.drawable.im_7)  //true
+                    img.add(R.drawable.img_6)
+                    img.add(R.drawable.img_5)
+                    img.add(R.drawable.img_4)  //true
                     //bir xil kattalik
                     img.add(R.drawable.im_9)  //true
                     img.add(R.drawable.im_10)  //true
                     img.add(R.drawable.im_11)
-                    img.add(R.drawable.img)
+                    img.add(R.drawable.img0)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -103,32 +103,32 @@ open class PlayActivity : AppCompatActivity() {
                 1->{
                     //Baland-past
                     datatext.clear()
-                    datatext.add("Qaysi archa baland?")
-                    datatext.add("Qaysi archa past?")
+                    datatext.add("Qaysi biri baland?")
+                    datatext.add("Qaysi biri past?")
                     datatext.add("Qaysi bino baland")
                     datatext.add("Qaysi bino past?")
-                    datatext.add("Qaysi bino va archa baland?")
+                    datatext.add("Qaysi bino va hayvon baland?")
 
                     img.clear()
                     //archa balan
-                    img.add(R.drawable.im_13)
-                    img.add(R.drawable.im_14)
+                    img.add(R.drawable.img_7)
+                    img.add(R.drawable.img_9)
                     //archa past
-                    img.add(R.drawable.im_13)
-                    img.add(R.drawable.im_14)
+                    img.add(R.drawable.img_9)
+                    img.add(R.drawable.img_8)
                     //bino baland
-                    img.add(R.drawable.im_17)
-                    img.add(R.drawable.im_16)
-                    img.add(R.drawable.aa)
+                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_12)
+                    img.add(R.drawable.img_11)
                     //bino past
-                    img.add(R.drawable.aa)
-                    img.add(R.drawable.im_17)
-                    img.add(R.drawable.im_16)
+                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_11)
+                    img.add(R.drawable.img_12)
                     //archa bilan bino
-                    img.add(R.drawable.im_13)
-                    img.add(R.drawable.im_17)
-                    img.add(R.drawable.aa)
-                    img.add(R.drawable.im_16)
+                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_8)
+                    img.add(R.drawable.img_13)
+                    img.add(R.drawable.img_12)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -136,32 +136,32 @@ open class PlayActivity : AppCompatActivity() {
                 2->{
                     //Keng-tor
                     datatext.clear()
-                    datatext.add("Enli taxtani ko ‘rsating")
-                    datatext.add("Ensiz taxtani ko ‘rsating")
-                    datatext.add("Qaysi lenta enli?")
-                    datatext.add("Qaysi lenta ensiz?")
-                    datatext.add("Qaysi taxta va lenta enli?")
+                    datatext.add("Qaysi daryo keng?")
+                    datatext.add("Qaysi daryo tor?")
+                    datatext.add("Qaysi daraxt enli?")
+                    datatext.add("Qaysi daraxt ensiz?")
+                    datatext.add("Qaysi daryo va daraxt enli?")
 
                     img.clear()
                     //enli taxta
-                    img.add(R.drawable.img_1)
-                    img.add(R.drawable.img_2)
+                    img.add(R.drawable.img_14)
+                    img.add(R.drawable.img_15)
                     //ensiz taxta
-                    img.add(R.drawable.img_1)
-                    img.add(R.drawable.img_2)
+                    img.add(R.drawable.img_14)
+                    img.add(R.drawable.img_15)
                     //Enli lenta
-                    img.add(R.drawable.img_3)
-                    img.add(R.drawable.img_4)
-                    img.add(R.drawable.img_5)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
+                    img.add(R.drawable.img_18)
                     //ensiz lenta
-                    img.add(R.drawable.img_5)
-                    img.add(R.drawable.img_3)
-                    img.add(R.drawable.img_4)
+                    img.add(R.drawable.img_18)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
                     //enli taxta ensiz lenta
-                    img.add(R.drawable.img_1)
-                    img.add(R.drawable.img_3)
-                    img.add(R.drawable.img_4)
-                    img.add(R.drawable.img_2)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_14)
+                    img.add(R.drawable.img_17)
+                    img.add(R.drawable.img_15)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -170,63 +170,63 @@ open class PlayActivity : AppCompatActivity() {
                     //Qalin-yupqa
                     datatext.clear()
                     datatext.add("Qaysi kitob qalin?")
-                    datatext.add("Qaysi kitob yupqa?")
+                    datatext.add("Qaysi bo'lak yupqa?")
                     datatext.add("Qaysi daraxt qalin?")
                     datatext.add("Qaysi daraxt yupqa?")
                     datatext.add("Qaysi kitob va daraxt qalin?")
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_6)
-                    img.add(R.drawable.img_7)
+                    img.add(R.drawable.img_6a)
+                    img.add(R.drawable.img_7a)
                     //yupqa kitob
-                    img.add(R.drawable.img_6)
-                    img.add(R.drawable.img_7)
+                    img.add(R.drawable.img_19)
+                    img.add(R.drawable.img_20)
                     //qalin daraxt
-                    img.add(R.drawable.img_8)
-                    img.add(R.drawable.img_9)
-                    img.add(R.drawable.img_9)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
+                    img.add(R.drawable.img_18)
                     //yupqa daraxt
-                    img.add(R.drawable.img_8)
-                    img.add(R.drawable.im_13)
-                    img.add(R.drawable.img_9)
+                    img.add(R.drawable.img_18)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_17)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_8)
-                    img.add(R.drawable.img_6)
-                    img.add(R.drawable.img_7)
-                    img.add(R.drawable.img_9)
+                    img.add(R.drawable.img_16)
+                    img.add(R.drawable.img_6a)
+                    img.add(R.drawable.img_7a)
+                    img.add(R.drawable.img_17)
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 4->{
                     //Uzun-qisqa
                     datatext.clear()
-                    datatext.add("Uzun yo'lni belgilang")
-                    datatext.add("Qisqa yo'lni belgilang")
-                    datatext.add("Qaysi biri uzun tasma?")
-                    datatext.add("Qaysi biri qisqa tasma?")
+                    datatext.add("Uzun qalamni belgilang")
+                    datatext.add("Qisqa qalamni belgilang")
+                    datatext.add("Qaysi biri uzun qalam?")
+                    datatext.add("Qaysi biri qisqa qalam?")
                     datatext.add("Uzunligi teng tasmalarni belgilang")
 
                     img.clear()
                     //uzun y6l
-                    img.add(R.drawable.img_12)
-                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_21)
+                    img.add(R.drawable.img_22)
                     //qisqa y6l
-                    img.add(R.drawable.img_12)
-                    img.add(R.drawable.img_10)
+                    img.add(R.drawable.img_21)
+                    img.add(R.drawable.img_22)
                     //qalin daraxt
-                    img.add(R.drawable.img_13)
-                    img.add(R.drawable.img_14)
-                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_25)
+                    img.add(R.drawable.img_24)
                     //yupqa daraxt
-                    img.add(R.drawable.img_15)
-                    img.add(R.drawable.img_13)
-                    img.add(R.drawable.img_14)
+                    img.add(R.drawable.img_24)
+                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_25)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_16)
-                    img.add(R.drawable.img_17)
-                    img.add(R.drawable.img_14)
-                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_16a)
+                    img.add(R.drawable.img_17a)
+                    //img.add(R.drawable.img_14a)
+                    //img.add(R.drawable.img_15a)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -246,24 +246,24 @@ open class PlayActivity : AppCompatActivity() {
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_18)
-                    img.add(R.drawable.img_19)
+                    img.add(R.drawable.img_18a)
+                    img.add(R.drawable.img_19a)
                     //yupqa kitob
-                    img.add(R.drawable.img_18)
-                    img.add(R.drawable.img_19)
+                    img.add(R.drawable.img_18a)
+                    img.add(R.drawable.img_19a)
                     //qalin daraxt
-                    img.add(R.drawable.img_20)
-                    img.add(R.drawable.img_21)
-                    img.add(R.drawable.img_22)
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_21a)
+                    img.add(R.drawable.img_22a)
                     //yupqa daraxt
-                    img.add(R.drawable.img_22)
-                    img.add(R.drawable.img_20)
-                    img.add(R.drawable.img_21)
+                    img.add(R.drawable.img_22a)
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_21a)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_18)
-                    img.add(R.drawable.img_20)
-                    img.add(R.drawable.img_22)
-                    img.add(R.drawable.img_19)
+                    img.add(R.drawable.img_18a)
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_22a)
+                    img.add(R.drawable.img_19a)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -288,24 +288,24 @@ open class PlayActivity : AppCompatActivity() {
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_24)
-                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_24a)
+                    img.add(R.drawable.img_23a)
                     //yupqa kitob
-                    img.add(R.drawable.img_24)
-                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_24a)
+                    img.add(R.drawable.img_23a)
                     //qalin daraxt
-                    img.add(R.drawable.img_25)
-                    img.add(R.drawable.img_24)
-                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_25a)
+                    img.add(R.drawable.img_24a)
+                    img.add(R.drawable.img_23a)
                     //yupqa daraxt
-                    img.add(R.drawable.img_24)
-                    img.add(R.drawable.img_25)
-                    img.add(R.drawable.img_26)
+                    img.add(R.drawable.img_24a)
+                    img.add(R.drawable.img_25a)
+                    img.add(R.drawable.img_26a)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_23)
-                    img.add(R.drawable.img_25)
-                    img.add(R.drawable.img_24)
-                    img.add(R.drawable.img_26)
+                    img.add(R.drawable.img_23a)
+                    img.add(R.drawable.img_25a)
+                    img.add(R.drawable.img_24a)
+                    img.add(R.drawable.img_26a)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -334,24 +334,24 @@ open class PlayActivity : AppCompatActivity() {
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_27)
-                    img.add(R.drawable.img_28)
+                    img.add(R.drawable.img_27a)
+                    img.add(R.drawable.img_28a)
                     //yupqa kitob
-                    img.add(R.drawable.img_27)
-                    img.add(R.drawable.img_28)
+                    img.add(R.drawable.img_27a)
+                    img.add(R.drawable.img_28a)
                     //qalin daraxt
-                    img.add(R.drawable.img_29)
-                    img.add(R.drawable.img_30)
-                    img.add(R.drawable.img_31)
+                    img.add(R.drawable.img_29a)
+                    img.add(R.drawable.img_30a)
+                    img.add(R.drawable.img_31a)
                     //yupqa daraxt
-                    img.add(R.drawable.img_31)
-                    img.add(R.drawable.img_29)
-                    img.add(R.drawable.img_30)
+                    img.add(R.drawable.img_31a)
+                    img.add(R.drawable.img_29a)
+                    img.add(R.drawable.img_30a)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_32)
-                    img.add(R.drawable.img_30)
-                    img.add(R.drawable.img_29)
-                    img.add(R.drawable.img_31)
+                    img.add(R.drawable.img_32a)
+                    img.add(R.drawable.img_30a)
+                    img.add(R.drawable.img_29a)
+                    img.add(R.drawable.img_31a)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -367,24 +367,24 @@ open class PlayActivity : AppCompatActivity() {
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_33)
-                    img.add(R.drawable.img_34)
+                    img.add(R.drawable.img_33a)
+                    img.add(R.drawable.img_34a)
                     //yupqa kitob
-                    img.add(R.drawable.img_34)
-                    img.add(R.drawable.img_35)
+                    img.add(R.drawable.img_34a)
+                    img.add(R.drawable.img_35a)
                     //qalin daraxt
-                    img.add(R.drawable.img_36)
-                    img.add(R.drawable.img_34)
-                    img.add(R.drawable.img_33)
+                    img.add(R.drawable.img_36a)
+                    img.add(R.drawable.img_34a)
+                    img.add(R.drawable.img_33a)
                     //yupqa daraxt
-                    img.add(R.drawable.img_38)
-                    img.add(R.drawable.img_34)
-                    img.add(R.drawable.img_37)
+                    img.add(R.drawable.img_38a)
+                    img.add(R.drawable.img_34a)
+                    img.add(R.drawable.img_37a)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_38)
-                    img.add(R.drawable.img_34)
-                    img.add(R.drawable.img_33)
-                    img.add(R.drawable.img_36)
+                    img.add(R.drawable.img_38a)
+                    img.add(R.drawable.img_34a)
+                    img.add(R.drawable.img_33a)
+                    img.add(R.drawable.img_36a)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)

@@ -2,15 +2,12 @@ package com.example.matematika_1.dialog
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.support.v4.app.DialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import com.example.matematika_1.Activity.PlayActivity
 import com.example.matematika_1.Activity.TestActivity
 import com.example.matematika_1.R
@@ -30,12 +27,12 @@ class MondatDialog : DialogFragment() {
         val txt1:TextView=view.findViewById(R.id.textView3)
         val txt2:TextView=view.findViewById(R.id.textView4)
 
-        val bundle = this.arguments
-        var t:Int=bundle?.getInt("t") as Int
-        var f:Int=bundle?.getInt("f") as Int
+        /*val bundle = this.arguments
+        val t:Int=bundle?.getInt("t") as Int
+        val f:Int=bundle?.getInt("f") as Int
 
         txt1.setText(txt1.text.toString()+t.toString())
-        txt2.setText(txt2.text.toString()+f.toString())
+        txt2.setText(txt2.text.toString()+f.toString())*/
 
         btn1.setOnClickListener{
             val intent= Intent(context, PlayActivity::class.java)
