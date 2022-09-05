@@ -205,7 +205,7 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.add("Qisqa qalamni belgilang")
                     datatext.add("Qaysi biri uzun qalam?")
                     datatext.add("Qaysi biri qisqa qalam?")
-                    datatext.add("Uzunligi teng tasmalarni belgilang")
+                    datatext.add("Uzunligi teng qalamlarni belgilang")
 
                     img.clear()
                     //uzun y6l
@@ -223,23 +223,52 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_23)
                     img.add(R.drawable.img_25)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_16a)
-                    img.add(R.drawable.img_17a)
-                    //img.add(R.drawable.img_14a)
-                    //img.add(R.drawable.img_15a)
+                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_23)
+                    img.add(R.drawable.img_24)
+                    img.add(R.drawable.img_25)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 5->{
-                    val intent=Intent(this,DoraActivity::class.java)
+                    //doira
+                    datatext.clear()
+                    datatext.add("Doira shaklini ko'rsating")
+                    datatext.add("Qaysi biri doiraga misol?")
+                    datatext.add("Qaysi biri doiraga misol?")
+                    datatext.add("Qaysi shakl doira?")
+                    datatext.add("Doira shakllarni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_111)
+                    img.add(R.drawable.img_103)
+                    //yupqa kitob
+                    img.add(R.drawable.img_110)
+                    img.add(R.drawable.img_109)
+                    //qalin daraxt
+                    img.add(R.drawable.img_105)
+                    img.add(R.drawable.img_106)
+                    img.add(R.drawable.img_107)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_102)
+                    img.add(R.drawable.img_111)
+                    img.add(R.drawable.img_103)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_105)
+                    img.add(R.drawable.img_109)
+                    img.add(R.drawable.img_106)
+                    img.add(R.drawable.img_107)
+
+                    val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 6->{
                     //Ko'p-kam
                     datatext.clear()
                     datatext.add("Qaysi rasmdagi jo'jalar ko'p?")
-                    datatext.add("Qaysi rasmdagi jo'jalar kam?")
+                    datatext.add("Qaysi savatdagi olmalar kam?")
                     datatext.add("Ko'p pufaklarni belgilang")
                     datatext.add("Kam pufaklarni belgilang")
                     datatext.add("ko'p jo'ja va pufakni belgilang")
@@ -249,8 +278,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_18a)
                     img.add(R.drawable.img_19a)
                     //yupqa kitob
-                    img.add(R.drawable.img_18a)
-                    img.add(R.drawable.img_19a)
+                    img.add(R.drawable.img_27a)
+                    img.add(R.drawable.img_28a)
                     //qalin daraxt
                     img.add(R.drawable.img_20a)
                     img.add(R.drawable.img_21a)
@@ -270,12 +299,42 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 7->{
                     //Barovar-teng
+                    datatext.clear()
+                    datatext.add("Qaysi biri ko'p?")
+                    datatext.add("Qaysi biri kam?")
+                    datatext.add("Eng ko'pini belgilang")
+                    datatext.add("Eng kamini belgilang")
+                    datatext.add("Barovarini belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_33)
+                    img.add(R.drawable.img_34)
+                    //yupqa kitob
+                    img.add(R.drawable.img_35)
+                    img.add(R.drawable.img_33)
+                    //qalin daraxt
+                    img.add(R.drawable.img_35)
+                    img.add(R.drawable.img_34)
+                    img.add(R.drawable.img_33)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_33)
+                    img.add(R.drawable.img_35)
+                    img.add(R.drawable.img_34)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_35)
+                    img.add(R.drawable.img_36)
+                    img.add(R.drawable.img_33)
+                    img.add(R.drawable.img_34)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 8->{
                     //Yaqin-uzoq
                 }
                 9->{
-
+                    //yuqori-past
                 }
                 10->{
                     //O'ngda-chapda
@@ -311,47 +370,137 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 11->{
-                    //yonida
+                    //uchburchak
+                    datatext.clear()
+                    datatext.add("Uchburchak shaklini ko'rsating")
+                    datatext.add("Qaysi biri uchburchakka misol?")
+                    datatext.add("Qaysi biri uchburchakka misol?")
+                    datatext.add("Qaysi shakl uchburchak?")
+                    datatext.add("Uchburchak shakllarni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_111)
+                    img.add(R.drawable.img_103)
+                    //yupqa kitob
+                    img.add(R.drawable.img_108)
+                    img.add(R.drawable.img_107)
+                    //qalin daraxt
+                    img.add(R.drawable.img_110)
+                    img.add(R.drawable.img_113)
+                    img.add(R.drawable.img_106)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_102)
+                    img.add(R.drawable.img_103)
+                    img.add(R.drawable.img_111)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_110)
+                    img.add(R.drawable.img_107)
+                    img.add(R.drawable.img_109)
+                    img.add(R.drawable.img_113)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 12->{
-                    //togri tortburchak
+                    //yonida
+                    datatext.clear()
+                    datatext.add("Atrofidagi sharni belgilang")
+                    datatext.add("Oldidagi sharni belgilang")
+                    datatext.add("O'rtadagi sharni belgilang")
+                    datatext.add("Orqasidagi sharni belgilang")
+                    datatext.add("Tepa va pastdagi sharni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_81)
+                    img.add(R.drawable.img_85)
+                    //yupqa kitob
+                    img.add(R.drawable.img_83)
+                    img.add(R.drawable.img_82)
+                    //qalin daraxt
+                    img.add(R.drawable.img_83)
+                    img.add(R.drawable.img_84)
+                    img.add(R.drawable.img_81)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_83)
+                    img.add(R.drawable.img_86)
+                    img.add(R.drawable.img_84)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_85)
+                    img.add(R.drawable.img_86)
+                    img.add(R.drawable.img_82)
+                    img.add(R.drawable.img_84)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 13->{
-                    //birinchi va oxirgi
+                    //togri tortburchak
+                    datatext.clear()
+                    datatext.add("To'rtburchak shaklini ko'rsating")
+                    datatext.add("Qaysi biri to'rtburchakka misol?")
+                    datatext.add("Qaysi biri to'rtburchakka misol?")
+                    datatext.add("Qaysi shakl to'rtburchak?")
+                    datatext.add("To'rtburchak shakllarni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_112)
+                    img.add(R.drawable.img_103)
+                    //yupqa kitob
+                    img.add(R.drawable.img_110)
+                    img.add(R.drawable.img_113)
+                    //qalin daraxt
+                    img.add(R.drawable.img_114)
+                    img.add(R.drawable.img_108)
+                    img.add(R.drawable.img_107)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_111)
+                    img.add(R.drawable.img_103)
+                    img.add(R.drawable.img_112)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_112)
+                    img.add(R.drawable.img_114)
+                    img.add(R.drawable.img_105)
+                    img.add(R.drawable.img_111)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 14->{
-
+                    //birinchi va oxirgi
                 }
                 15->{
                     //ogir yengil
                     datatext.clear()
-                    datatext.add("Qaysi savatdagi olmalar og'ir?")
-                    datatext.add("Qaysi savatdagi olmalar yengil?")
+                    datatext.add("Qaysi biri og'ir?")
+                    datatext.add("Qaysi yuk yengil?")
                     datatext.add("Eng og'irini ko'rsating")
                     datatext.add("Eng yengilini ko'rsating")
-                    datatext.add("Eng og'iri va yengilini ko'rsating")
+                    datatext.add("Og'ir yuk bilan koptokni ko'rsating")
 
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_27a)
-                    img.add(R.drawable.img_28a)
+                    img.add(R.drawable.img_26)
+                    img.add(R.drawable.img_27)
                     //yupqa kitob
-                    img.add(R.drawable.img_27a)
-                    img.add(R.drawable.img_28a)
+                    img.add(R.drawable.img_28)
+                    img.add(R.drawable.img_29)
                     //qalin daraxt
-                    img.add(R.drawable.img_29a)
-                    img.add(R.drawable.img_30a)
-                    img.add(R.drawable.img_31a)
+                    img.add(R.drawable.img_32)
+                    img.add(R.drawable.img_30)
+                    img.add(R.drawable.img_31)
                     //yupqa daraxt
-                    img.add(R.drawable.img_31a)
-                    img.add(R.drawable.img_29a)
-                    img.add(R.drawable.img_30a)
+                    img.add(R.drawable.img_31)
+                    img.add(R.drawable.img_32)
+                    img.add(R.drawable.img_30)
                     //yupqa dra va kitob
-                    img.add(R.drawable.img_32a)
-                    img.add(R.drawable.img_30a)
-                    img.add(R.drawable.img_29a)
-                    img.add(R.drawable.img_31a)
+                    img.add(R.drawable.img_28)
+                    img.add(R.drawable.img_26)
+                    img.add(R.drawable.img_27)
+                    img.add(R.drawable.img_29)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -390,46 +539,502 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 17->{
-                    //Kvadrat
+                    //qo'shish - ayirish
                 }
                 18->{
-                    //1 soni va raqami
+                    //Kvadrat
+                    datatext.clear()
+                    datatext.add("Kvadrat shaklini ko'rsating")
+                    datatext.add("Qaysi biri kvadratga misol?")
+                    datatext.add("Qaysi biri kvadratga misol?")
+                    datatext.add("Qaysi shakl kvadrat?")
+                    datatext.add("Kvadrat shakllarni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_102)
+                    img.add(R.drawable.img_103)
+                    //yupqa kitob
+                    img.add(R.drawable.img_105)
+                    img.add(R.drawable.img_104)
+                    //qalin daraxt
+                    img.add(R.drawable.img_106)
+                    img.add(R.drawable.img_107)
+                    img.add(R.drawable.img_108)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_111)
+                    img.add(R.drawable.img_103)
+                    img.add(R.drawable.img_102)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_106)
+                    img.add(R.drawable.img_104)
+                    img.add(R.drawable.img_109)
+                    img.add(R.drawable.img_110)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 19->{
-                    //Nuqta va chiziq
+                    //1 soni va raqami
+                    datatext.clear()
+                    datatext.add("Bir sonini belgilang")
+                    datatext.add("Qaysi birida 1 ta katak bo'yalgan?")
+                    datatext.add("1 barmoqni belgilang")
+                    datatext.add("1 ni ko'rsating")
+                    datatext.add("1 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_37)
+                    img.add(R.drawable.img_39)
+                    //yupqa kitob
+                    img.add(R.drawable.img_49)
+                    img.add(R.drawable.img_48)
+                    //qalin daraxt
+                    img.add(R.drawable.img_59)
+                    img.add(R.drawable.img_60)
+                    img.add(R.drawable.img_65)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_75)
+                    img.add(R.drawable.img_72)
+                    img.add(R.drawable.img_70)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_37)
+                    img.add(R.drawable.img_59)
+                    img.add(R.drawable.img_39)
+                    img.add(R.drawable.img_60)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 20->{
-                    //2 soni va raqami
+                    //Nuqta va chiziq
+                    datatext.clear()
+                    datatext.add("Nuqtani belgilang")
+                    datatext.add("Egri chiziqni ko'rsating")
+                    datatext.add("To'g'ri chiziqni ko'rsating")
+                    datatext.add("Egri chiziqni ko'rsating")
+                    datatext.add("Nuqta va to'g'ri chiziqni ko'rsating")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_96)
+                    img.add(R.drawable.img_98)
+                    //yupqa kitob
+                    img.add(R.drawable.img_99)
+                    img.add(R.drawable.img_97)
+                    //qalin daraxt
+                    img.add(R.drawable.img_100)
+                    img.add(R.drawable.img_101)
+                    img.add(R.drawable.img_96)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_99)
+                    img.add(R.drawable.img_96)
+                    img.add(R.drawable.img_101)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_96)
+                    img.add(R.drawable.img_100)
+                    img.add(R.drawable.img_97)
+                    img.add(R.drawable.img_101)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 21->{
-                    //3 soni va raqami
+                    //2 soni va raqami
+                    datatext.clear()
+                    datatext.add("Ikki sonini belgilang")
+                    datatext.add("Qaysi birida 2 ta katak bo'yalgan?")
+                    datatext.add("2 barmoqni belgilang")
+                    datatext.add("2 ni ko'rsating")
+                    datatext.add("2 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_38)
+                    img.add(R.drawable.img_42)
+                    //yupqa kitob
+                    img.add(R.drawable.img_52)
+                    img.add(R.drawable.img_49)
+                    //qalin daraxt
+                    img.add(R.drawable.img_60)
+                    img.add(R.drawable.img_65)
+                    img.add(R.drawable.img_64)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_74)
+                    img.add(R.drawable.img_76)
+                    img.add(R.drawable.img_71)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_38)
+                    img.add(R.drawable.img_60)
+                    img.add(R.drawable.img_42)
+                    img.add(R.drawable.img_65)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 22->{
-                    //4 soni va raqami
+                    //3 soni va raqami
+                    datatext.clear()
+                    datatext.add("Uch sonini belgilang")
+                    datatext.add("Qaysi birida 3 ta katak bo'yalgan?")
+                    datatext.add("3 barmoqni belgilang")
+                    datatext.add("3 ni ko'rsating")
+                    datatext.add("3 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_39)
+                    img.add(R.drawable.img_41)
+                    //yupqa kitob
+                    img.add(R.drawable.img_52)
+                    img.add(R.drawable.img_50)
+                    //qalin daraxt
+                    img.add(R.drawable.img_61)
+                    img.add(R.drawable.img_67)
+                    img.add(R.drawable.img_62)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_70)
+                    img.add(R.drawable.img_74)
+                    img.add(R.drawable.img_72)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_39)
+                    img.add(R.drawable.img_61)
+                    img.add(R.drawable.img_41)
+                    img.add(R.drawable.img_67)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 23->{
-                    //5 soni va raqami
+                    //4 soni va raqami
+                    datatext.clear()
+                    datatext.add("To'rt sonini belgilang")
+                    datatext.add("Qaysi birida 4 ta katak bo'yalgan?")
+                    datatext.add("4 barmoqni belgilang")
+                    datatext.add("4 ni ko'rsating")
+                    datatext.add("4 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_40)
+                    img.add(R.drawable.img_47)
+                    //yupqa kitob
+                    img.add(R.drawable.img_48)
+                    img.add(R.drawable.img_51)
+                    //qalin daraxt
+                    img.add(R.drawable.img_62)
+                    img.add(R.drawable.img_60)
+                    img.add(R.drawable.img_68)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_78)
+                    img.add(R.drawable.img_71)
+                    img.add(R.drawable.img_73)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_40)
+                    img.add(R.drawable.img_62)
+                    img.add(R.drawable.img_47)
+                    img.add(R.drawable.img_60)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 24->{
-                    //6 soni va raqami
+                    //5 soni va raqami
+                    datatext.clear()
+                    datatext.add("Besh sonini belgilang")
+                    datatext.add("Qaysi birida 5 ta katak bo'yalgan?")
+                    datatext.add("5 barmoqni belgilang")
+                    datatext.add("5 ni ko'rsating")
+                    datatext.add("5 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_41)
+                    img.add(R.drawable.img_40)
+                    //yupqa kitob
+                    img.add(R.drawable.img_53)
+                    img.add(R.drawable.img_52)
+                    //qalin daraxt
+                    img.add(R.drawable.img_63)
+                    img.add(R.drawable.img_61)
+                    img.add(R.drawable.img_69)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_78)
+                    img.add(R.drawable.img_79)
+                    img.add(R.drawable.img_74)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_41)
+                    img.add(R.drawable.img_63)
+                    img.add(R.drawable.img_40)
+                    img.add(R.drawable.img_61)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 25->{
-                    //7 soni va raqami
+                    //0 soni va raqami
+                    datatext.clear()
+                    datatext.add("Nol sonini belgilang")
+                    datatext.add("Qaysi birida 0 ta katak bo'yalgan?")
+                    datatext.add("0 barmoqni belgilang")
+                    datatext.add("0 ni ko'rsating")
+                    datatext.add("0 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_47)
+                    img.add(R.drawable.img_39)
+                    //yupqa kitob
+                    img.add(R.drawable.img_57)
+                    img.add(R.drawable.img_58)
+                    //qalin daraxt
+                    img.add(R.drawable.img_69)
+                    img.add(R.drawable.img_67)
+                    img.add(R.drawable.img_59)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_75)
+                    img.add(R.drawable.img_79)
+                    img.add(R.drawable.img_80)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_47)
+                    img.add(R.drawable.img_69)
+                    img.add(R.drawable.img_39)
+                    img.add(R.drawable.img_67)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 26->{
-                    //8 soni va raqami
+                    //6 soni va raqami
+                    datatext.clear()
+                    datatext.add("Olti sonini belgilang")
+                    datatext.add("Qaysi birida 6 ta katak bo'yalgan?")
+                    datatext.add("6 barmoqni belgilang")
+                    datatext.add("6 ni ko'rsating")
+                    datatext.add("6 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_42)
+                    img.add(R.drawable.img_37)
+                    //yupqa kitob
+                    img.add(R.drawable.img_56)
+                    img.add(R.drawable.img_53)
+                    //qalin daraxt
+                    img.add(R.drawable.img_64)
+                    img.add(R.drawable.img_62)
+                    img.add(R.drawable.img_68)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_78)
+                    img.add(R.drawable.img_70)
+                    img.add(R.drawable.img_75)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_42)
+                    img.add(R.drawable.img_64)
+                    img.add(R.drawable.img_37)
+                    img.add(R.drawable.img_62)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 27->{
-                    //To'g'ri chiziq yasash
+                    //7 soni va raqami
+                    datatext.clear()
+                    datatext.add("Yetti sonini belgilang")
+                    datatext.add("Qaysi birida 7 ta katak bo'yalgan?")
+                    datatext.add("7 barmoqni belgilang")
+                    datatext.add("7 ni ko'rsating")
+                    datatext.add("7 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_43)
+                    img.add(R.drawable.img_41)
+                    //yupqa kitob
+                    img.add(R.drawable.img_50)
+                    img.add(R.drawable.img_54)
+                    //qalin daraxt
+                    img.add(R.drawable.img_65)
+                    img.add(R.drawable.img_67)
+                    img.add(R.drawable.img_60)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_71)
+                    img.add(R.drawable.img_73)
+                    img.add(R.drawable.img_76)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_43)
+                    img.add(R.drawable.img_65)
+                    img.add(R.drawable.img_41)
+                    img.add(R.drawable.img_67)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 28->{
-                    //Shar va kub
+                    //8 soni va raqami
+                    datatext.clear()
+                    datatext.add("Sakkiz sonini belgilang")
+                    datatext.add("Qaysi birida 8 ta katak bo'yalgan?")
+                    datatext.add("8 barmoqni belgilang")
+                    datatext.add("8 ni ko'rsating")
+                    datatext.add("8 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_44)
+                    img.add(R.drawable.img_39)
+                    //yupqa kitob
+                    img.add(R.drawable.img_51)
+                    img.add(R.drawable.img_55)
+                    //qalin daraxt
+                    img.add(R.drawable.img_66)
+                    img.add(R.drawable.img_64)
+                    img.add(R.drawable.img_63)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_80)
+                    img.add(R.drawable.img_72)
+                    img.add(R.drawable.img_77)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_44)
+                    img.add(R.drawable.img_66)
+                    img.add(R.drawable.img_39)
+                    img.add(R.drawable.img_64)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 29->{
-                    //9 soni va raqami
+                    //To'g'ri chiziq yasash
+                    datatext.clear()
+                    datatext.add("Qaysi rasmdagi jo'jalar ko'p?")
+                    datatext.add("Qaysi savatdagi olmalar kam?")
+                    datatext.add("Ko'p pufaklarni belgilang")
+                    datatext.add("Kam pufaklarni belgilang")
+                    datatext.add("ko'p jo'ja va pufakni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_18a)
+                    img.add(R.drawable.img_19a)
+                    //yupqa kitob
+                    img.add(R.drawable.img_27a)
+                    img.add(R.drawable.img_28a)
+                    //qalin daraxt
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_21a)
+                    img.add(R.drawable.img_22a)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_22a)
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_21a)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_18a)
+                    img.add(R.drawable.img_20a)
+                    img.add(R.drawable.img_22a)
+                    img.add(R.drawable.img_19a)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 30->{
+                    //Shar va kub
+                    datatext.clear()
+                    datatext.add("Qaysi biri kubga misol?")
+                    datatext.add("Qaysi biri sharga misol?")
+                    datatext.add("Kub shaklini belgilang")
+                    datatext.add("Shar shaklini belgilang")
+                    datatext.add("Shar va kubga misollarni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_87)
+                    img.add(R.drawable.img_88)
+                    //yupqa kitob
+                    img.add(R.drawable.img_90)
+                    img.add(R.drawable.img_89)
+                    //qalin daraxt
+                    img.add(R.drawable.img_91)
+                    img.add(R.drawable.img_95)
+                    img.add(R.drawable.img_94)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_94)
+                    img.add(R.drawable.img_93)
+                    img.add(R.drawable.img_92)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_91)
+                    img.add(R.drawable.img_92)
+                    img.add(R.drawable.img_94)
+                    img.add(R.drawable.img_95)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
+                }
+                31->{
+                    //9 soni va raqami
+                    datatext.clear()
+                    datatext.add("To'qqiz sonini belgilang")
+                    datatext.add("Qaysi birida 9 ta katak bo'yalgan?")
+                    datatext.add("9 barmoqni belgilang")
+                    datatext.add("9 ni ko'rsating")
+                    datatext.add("9 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_45)
+                    img.add(R.drawable.img_38)
+                    //yupqa kitob
+                    img.add(R.drawable.img_52)
+                    img.add(R.drawable.img_56)
+                    //qalin daraxt
+                    img.add(R.drawable.img_67)
+                    img.add(R.drawable.img_65)
+                    img.add(R.drawable.img_59)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_74)
+                    img.add(R.drawable.img_80)
+                    img.add(R.drawable.img_78)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_45)
+                    img.add(R.drawable.img_67)
+                    img.add(R.drawable.img_38)
+                    img.add(R.drawable.img_65)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
+                }
+                32->{
                     //10 soni va raqami
+                    datatext.clear()
+                    datatext.add("O'n sonini belgilang")
+                    datatext.add("Qaysi birida 10 ta katak bo'yalgan?")
+                    datatext.add("10 barmoqni belgilang")
+                    datatext.add("10 ni ko'rsating")
+                    datatext.add("10 soni va barmoqni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_46)
+                    img.add(R.drawable.img_47)
+                    //yupqa kitob
+                    img.add(R.drawable.img_55)
+                    img.add(R.drawable.img_57)
+                    //qalin daraxt
+                    img.add(R.drawable.img_68)
+                    img.add(R.drawable.img_64)
+                    img.add(R.drawable.img_62)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_71)
+                    img.add(R.drawable.img_74)
+                    img.add(R.drawable.img_79)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_46)
+                    img.add(R.drawable.img_68)
+                    img.add(R.drawable.img_47)
+                    img.add(R.drawable.img_64)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
             }
         }
