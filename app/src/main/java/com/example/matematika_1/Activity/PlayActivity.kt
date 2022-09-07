@@ -72,9 +72,9 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.clear()
                     datatext.add("Qaysi mashina katta?")
                     datatext.add("Qaysi qush kichik?")
-                    datatext.add("Qaysi hayvon katta?")
-                    datatext.add("Qaysi meva kichik?")
-                    datatext.add("Qaysi shakllar bir xil kattalikda?")
+                    datatext.add("Qaysi biri katta?")
+                    datatext.add("Qaysi biri kichik?")
+                    datatext.add("Katta mevalarni belgilang")
 
                     img.clear()
                     //mashina
@@ -92,10 +92,10 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_5)
                     img.add(R.drawable.img_4)  //true
                     //bir xil kattalik
-                    img.add(R.drawable.im_9)  //true
-                    img.add(R.drawable.im_10)  //true
-                    img.add(R.drawable.im_11)
-                    img.add(R.drawable.img0)
+                    img.add(R.drawable.img_127)  //true
+                    img.add(R.drawable.img_128)  //true
+                    img.add(R.drawable.img_129)
+                    img.add(R.drawable.img_130)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -107,27 +107,27 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.add("Qaysi biri past?")
                     datatext.add("Qaysi bino baland")
                     datatext.add("Qaysi bino past?")
-                    datatext.add("Qaysi bino va hayvon baland?")
+                    datatext.add("Qaysi bino va odam baland?")
 
                     img.clear()
                     //archa balan
                     img.add(R.drawable.img_7)
                     img.add(R.drawable.img_9)
                     //archa past
-                    img.add(R.drawable.img_9)
                     img.add(R.drawable.img_8)
+                    img.add(R.drawable.img_126)
                     //bino baland
                     img.add(R.drawable.img_10)
                     img.add(R.drawable.img_12)
                     img.add(R.drawable.img_11)
                     //bino past
-                    img.add(R.drawable.img_10)
                     img.add(R.drawable.img_11)
+                    img.add(R.drawable.img_10)
                     img.add(R.drawable.img_12)
                     //archa bilan bino
                     img.add(R.drawable.img_10)
                     img.add(R.drawable.img_8)
-                    img.add(R.drawable.img_13)
+                    img.add(R.drawable.img_126)
                     img.add(R.drawable.img_12)
 
                     val intent=Intent(this, TestActivity::class.java)
@@ -137,7 +137,7 @@ open class PlayActivity : AppCompatActivity() {
                     //Keng-tor
                     datatext.clear()
                     datatext.add("Qaysi daryo keng?")
-                    datatext.add("Qaysi daryo tor?")
+                    datatext.add("Qaysi gul tor?")
                     datatext.add("Qaysi daraxt enli?")
                     datatext.add("Qaysi daraxt ensiz?")
                     datatext.add("Qaysi daryo va daraxt enli?")
@@ -147,8 +147,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_14)
                     img.add(R.drawable.img_15)
                     //ensiz taxta
-                    img.add(R.drawable.img_14)
-                    img.add(R.drawable.img_15)
+                    img.add(R.drawable.img_123)
+                    img.add(R.drawable.img_124)
                     //Enli lenta
                     img.add(R.drawable.img_16)
                     img.add(R.drawable.img_17)
@@ -202,7 +202,7 @@ open class PlayActivity : AppCompatActivity() {
                     //Uzun-qisqa
                     datatext.clear()
                     datatext.add("Uzun qalamni belgilang")
-                    datatext.add("Qisqa qalamni belgilang")
+                    datatext.add("Qisqa poyezdni belgilang")
                     datatext.add("Qaysi biri uzun qalam?")
                     datatext.add("Qaysi biri qisqa qalam?")
                     datatext.add("Uzunligi teng qalamlarni belgilang")
@@ -212,8 +212,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_21)
                     img.add(R.drawable.img_22)
                     //qisqa y6l
-                    img.add(R.drawable.img_21)
-                    img.add(R.drawable.img_22)
+                    img.add(R.drawable.img_131)
+                    img.add(R.drawable.img_132)
                     //qalin daraxt
                     img.add(R.drawable.img_23)
                     img.add(R.drawable.img_25)
@@ -242,8 +242,8 @@ open class PlayActivity : AppCompatActivity() {
 
                     img.clear()
                     //qalin kitob
-                    img.add(R.drawable.img_111)
                     img.add(R.drawable.img_103)
+                    img.add(R.drawable.img_111)
                     //yupqa kitob
                     img.add(R.drawable.img_110)
                     img.add(R.drawable.img_109)
@@ -271,7 +271,7 @@ open class PlayActivity : AppCompatActivity() {
                     datatext.add("Qaysi savatdagi olmalar kam?")
                     datatext.add("Ko'p pufaklarni belgilang")
                     datatext.add("Kam pufaklarni belgilang")
-                    datatext.add("ko'p jo'ja va pufakni belgilang")
+                    datatext.add("Ko'p jo'ja va pufakni belgilang")
 
                     img.clear()
                     //qalin kitob
@@ -321,7 +321,7 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_33)
                     img.add(R.drawable.img_35)
                     img.add(R.drawable.img_34)
-                    //yupqa dra va kitob
+                    //yupqa dra va kitob6
                     img.add(R.drawable.img_35)
                     img.add(R.drawable.img_36)
                     img.add(R.drawable.img_33)
@@ -332,9 +332,69 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 8->{
                     //Yaqin-uzoq
+                    datatext.clear()
+                    datatext.add("Yaqindagi kemani belgilang")
+                    datatext.add("Uzoqdagi odamni belgilang")
+                    datatext.add("Qaysi biri yaqin?")
+                    datatext.add("Qaysi biri uzoq?")
+                    datatext.add("Yaqindagi odam va kemani belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_117)
+                    img.add(R.drawable.img_118)
+                    //yupqa kitob
+                    img.add(R.drawable.img_120)
+                    img.add(R.drawable.img_119)
+                    //qalin daraxt
+                    img.add(R.drawable.img_121)
+                    img.add(R.drawable.img_119)
+                    img.add(R.drawable.img_122)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_120)
+                    img.add(R.drawable.img_121)
+                    img.add(R.drawable.img_119)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_117)
+                    img.add(R.drawable.img_120)
+                    img.add(R.drawable.img_118)
+                    img.add(R.drawable.img_119)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 9->{
                     //yuqori-past
+                    datatext.clear()
+                    datatext.add("Qaysi biri olamlarni tepadan teryapti?")
+                    datatext.add("Pastdagi qushni belgilang")
+                    datatext.add("Qaysi biri yuqorida?")
+                    datatext.add("Qaysi biri pastda?")
+                    datatext.add("Tepadagi odam va qushni belgilang")
+
+                    img.clear()
+                    //qalin kitob
+                    img.add(R.drawable.img_115)
+                    img.add(R.drawable.img_116)
+                    //yupqa kitob
+                    img.add(R.drawable.img_133)
+                    img.add(R.drawable.img_134)
+                    //qalin daraxt
+                    img.add(R.drawable.img_85)
+                    img.add(R.drawable.img_84)
+                    img.add(R.drawable.img_81)
+                    //yupqa daraxt
+                    img.add(R.drawable.img_82)
+                    img.add(R.drawable.img_83)
+                    img.add(R.drawable.img_86)
+                    //yupqa dra va kitob
+                    img.add(R.drawable.img_115)
+                    img.add(R.drawable.img_133)
+                    img.add(R.drawable.img_116)
+                    img.add(R.drawable.img_134)
+
+                    val intent=Intent(this, TestActivity::class.java)
+                    startActivity(intent)
                 }
                 10->{
                     //O'ngda-chapda
