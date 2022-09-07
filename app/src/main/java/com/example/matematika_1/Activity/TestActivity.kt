@@ -16,6 +16,7 @@ class TestActivity : PlayActivity() {
         val mBundle = Bundle()
         mBundle.putStringArrayList("mText", datatext)
         mBundle.putIntegerArrayList("image", img)
+        mBundle.putIntegerArrayList("sound", sound)
         mFragment.arguments = mBundle
         supportFragmentManager.beginTransaction().replace(R.id.fragment,mFragment).commit()
     }

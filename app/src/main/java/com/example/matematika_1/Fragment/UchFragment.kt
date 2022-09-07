@@ -6,9 +6,11 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.matematika_1.Activity.PlayActivity
 import com.example.matematika_1.R
 import com.example.matematika_1.dialog.RightDialog
 import com.example.matematika_1.dialog.Wrongdialog
@@ -39,6 +41,7 @@ class UchFragment : Fragment() {
         val bundle = this.arguments
         val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>  //answer
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> //image
+        val sound:ArrayList<Int> = bundle?.getIntegerArrayList("sound") as ArrayList<Int>
         var t:Int=bundle?.getInt("t") as Int  //true
         var f:Int=bundle?.getInt("f") as Int  //false
 
@@ -46,12 +49,14 @@ class UchFragment : Fragment() {
         val mBundle = Bundle()
         mBundle.putStringArrayList("mText", message)
         mBundle.putIntegerArrayList("image", img)
+        mBundle.putIntegerArrayList("sound", PlayActivity.sound)
         mFragment.arguments = mBundle
 
         val  textView:TextView=view.findViewById(R.id.answer)
         val image1: ImageView =view.findViewById(R.id.uch1)
         val image2: ImageView =view.findViewById(R.id.uch2)
         val image3:ImageView=view.findViewById(R.id.uch3)
+        val btn:Button=view.findViewById(R.id.sound)
 
         textView.setText(message[2])
         image1.setImageResource(img[4])
@@ -100,5 +105,15 @@ class UchFragment : Fragment() {
                 BgMusic?.start()
             }
         })
+        btn.setOnClickListener {
+            if (i < 1) {
+                BgMusic = MediaPlayer.create(context, sound[2])
+                BgMusic?.start()
+            }
+            else{
+                BgMusic = MediaPlayer.create(context, sound[3])
+                BgMusic?.start()
+            }
+        }
     }
 }

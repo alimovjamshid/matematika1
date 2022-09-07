@@ -14,6 +14,7 @@ open class PlayActivity : AppCompatActivity() {
     companion object {
         var datatext= ArrayList<String>()
         var img= ArrayList<Int>()
+        var sound=ArrayList<Int>()
     }
     lateinit var courseGRV: GridView
     lateinit var courseList: List<Item>
@@ -97,6 +98,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_129)
                     img.add(R.drawable.img_130)
 
+                    sound.clear()
+                    sound.add(R.raw.a1)
+                    sound.add(R.raw.a2)
+                    sound.add(R.raw.a3)
+                    sound.add(R.raw.a4)
+                    sound.add(R.raw.a5)
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -130,6 +138,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_126)
                     img.add(R.drawable.img_12)
 
+                    sound.clear()
+                    sound.add(R.raw.b1)
+                    sound.add(R.raw.b2)
+                    sound.add(R.raw.b3)
+                    sound.add(R.raw.b4)
+                    sound.add(R.raw.b5)
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -162,6 +177,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_14)
                     img.add(R.drawable.img_17)
                     img.add(R.drawable.img_15)
+
+                    sound.clear()
+                    sound.add(R.raw.c1)
+                    sound.add(R.raw.c2)
+                    sound.add(R.raw.c3)
+                    sound.add(R.raw.c4)
+                    sound.add(R.raw.c5)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -197,6 +219,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_17)
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
+
+                    sound.clear()
+                    sound.add(R.raw.d1)
+                    sound.add(R.raw.d2)
+                    sound.add(R.raw.d3)
+                    sound.add(R.raw.d4)
+                    sound.add(R.raw.d5)
                 }
                 4->{
                     //Uzun-qisqa
@@ -228,6 +257,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_24)
                     img.add(R.drawable.img_25)
 
+                    sound.clear()
+                    sound.add(R.raw.e1)
+                    sound.add(R.raw.e2)
+                    sound.add(R.raw.e3)
+                    sound.add(R.raw.e4)
+                    sound.add(R.raw.e5)
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -235,9 +271,9 @@ open class PlayActivity : AppCompatActivity() {
                     //doira
                     datatext.clear()
                     datatext.add("Doira shaklini ko'rsating")
-                    datatext.add("Qaysi biri doiraga misol?")
-                    datatext.add("Qaysi biri doiraga misol?")
-                    datatext.add("Qaysi shakl doira?")
+                    datatext.add("Qaysi biri doiraga misol bo'ladi?")
+                    datatext.add("Qaysi biri doiraga misol bo'ladi?")
+                    datatext.add("Qaysi shakl doira bo'ladi?")
                     datatext.add("Doira shakllarni belgilang")
 
                     img.clear()
@@ -260,6 +296,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_109)
                     img.add(R.drawable.img_106)
                     img.add(R.drawable.img_107)
+
+                    sound.clear()
+                    sound.add(R.raw.f1)
+                    sound.add(R.raw.f2)
+                    sound.add(R.raw.f3)
+                    sound.add(R.raw.f4)
+                    sound.add(R.raw.f5)
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -294,6 +337,13 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_22a)
                     img.add(R.drawable.img_19a)
 
+                    sound.clear()
+                    sound.add(R.raw.g1)
+                    sound.add(R.raw.g2)
+                    sound.add(R.raw.g3)
+                    sound.add(R.raw.g4)
+                    sound.add(R.raw.g5)
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -326,6 +376,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_36)
                     img.add(R.drawable.img_33)
                     img.add(R.drawable.img_34)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -360,6 +412,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_118)
                     img.add(R.drawable.img_119)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -392,6 +446,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_133)
                     img.add(R.drawable.img_116)
                     img.add(R.drawable.img_134)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -426,6 +482,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_24a)
                     img.add(R.drawable.img_26a)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -458,6 +516,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_107)
                     img.add(R.drawable.img_109)
                     img.add(R.drawable.img_113)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -492,6 +552,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_82)
                     img.add(R.drawable.img_84)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -524,6 +586,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_114)
                     img.add(R.drawable.img_105)
                     img.add(R.drawable.img_111)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -562,6 +626,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_27)
                     img.add(R.drawable.img_29)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -594,6 +660,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_34a)
                     img.add(R.drawable.img_33a)
                     img.add(R.drawable.img_36a)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -631,6 +699,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_109)
                     img.add(R.drawable.img_110)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -663,6 +733,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_59)
                     img.add(R.drawable.img_39)
                     img.add(R.drawable.img_60)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -697,6 +769,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_97)
                     img.add(R.drawable.img_101)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -729,6 +803,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_60)
                     img.add(R.drawable.img_42)
                     img.add(R.drawable.img_65)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -763,6 +839,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_41)
                     img.add(R.drawable.img_67)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -795,6 +873,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_62)
                     img.add(R.drawable.img_47)
                     img.add(R.drawable.img_60)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -829,6 +909,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_40)
                     img.add(R.drawable.img_61)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -861,6 +943,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_69)
                     img.add(R.drawable.img_39)
                     img.add(R.drawable.img_67)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -895,6 +979,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_37)
                     img.add(R.drawable.img_62)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -927,6 +1013,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_65)
                     img.add(R.drawable.img_41)
                     img.add(R.drawable.img_67)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -961,41 +1049,14 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_39)
                     img.add(R.drawable.img_64)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 29->{
                     //To'g'ri chiziq yasash
-                    datatext.clear()
-                    datatext.add("Qaysi rasmdagi jo'jalar ko'p?")
-                    datatext.add("Qaysi savatdagi olmalar kam?")
-                    datatext.add("Ko'p pufaklarni belgilang")
-                    datatext.add("Kam pufaklarni belgilang")
-                    datatext.add("ko'p jo'ja va pufakni belgilang")
 
-                    img.clear()
-                    //qalin kitob
-                    img.add(R.drawable.img_18a)
-                    img.add(R.drawable.img_19a)
-                    //yupqa kitob
-                    img.add(R.drawable.img_27a)
-                    img.add(R.drawable.img_28a)
-                    //qalin daraxt
-                    img.add(R.drawable.img_20a)
-                    img.add(R.drawable.img_21a)
-                    img.add(R.drawable.img_22a)
-                    //yupqa daraxt
-                    img.add(R.drawable.img_22a)
-                    img.add(R.drawable.img_20a)
-                    img.add(R.drawable.img_21a)
-                    //yupqa dra va kitob
-                    img.add(R.drawable.img_18a)
-                    img.add(R.drawable.img_20a)
-                    img.add(R.drawable.img_22a)
-                    img.add(R.drawable.img_19a)
-
-                    val intent=Intent(this, TestActivity::class.java)
-                    startActivity(intent)
                 }
                 30->{
                     //Shar va kub
@@ -1026,6 +1087,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_92)
                     img.add(R.drawable.img_94)
                     img.add(R.drawable.img_95)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
@@ -1060,6 +1123,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_38)
                     img.add(R.drawable.img_65)
 
+                    sound.clear()
+
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
@@ -1092,6 +1157,8 @@ open class PlayActivity : AppCompatActivity() {
                     img.add(R.drawable.img_68)
                     img.add(R.drawable.img_47)
                     img.add(R.drawable.img_64)
+
+                    sound.clear()
 
                     val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)

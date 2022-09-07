@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -45,6 +46,7 @@ class tortFragment : Fragment() {
 
         val message:ArrayList<String> = bundle?.getStringArrayList("mText") as ArrayList<String>
         val img:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int> /* = java.util.ArrayList<kotlin.Int> */
+        val sound:ArrayList<Int> = bundle?.getIntegerArrayList("sound") as ArrayList<Int>
         var t:Int=bundle?.getInt("t") as Int
         var f:Int=bundle?.getInt("f") as Int
 
@@ -53,6 +55,7 @@ class tortFragment : Fragment() {
         val image2: ImageView =view.findViewById(R.id.tort2)
         val image3:ImageView=view.findViewById(R.id.tort3)
         val image4:ImageView=view.findViewById(R.id.tort4)
+        val btn: Button =view.findViewById(R.id.sound)
 
         val mFragment = MondatDialog()
         mFragment.arguments = mBundle
@@ -70,7 +73,7 @@ class tortFragment : Fragment() {
             if(i and j){
                 mBundle.putInt("t",t)
                 mBundle.putInt("f",f)
-                mondatDialog.show(fragmentManager,"afghjk")
+                fragmentManager!!.beginTransaction().add(R.id.fragment,mFragment).commit()
             }
             else{
                 t++
@@ -85,7 +88,7 @@ class tortFragment : Fragment() {
                 mBundle.putInt("t",t)
                 mBundle.putInt("f",f)
                 mFragment.arguments = mBundle
-                mondatDialog.show(fragmentManager,"dfghjk")
+                fragmentManager!!.beginTransaction().add(R.id.fragment,mFragment).commit()
             }
             else{
                 t++
@@ -103,6 +106,10 @@ class tortFragment : Fragment() {
             BgMusic = MediaPlayer.create(context, R.raw.wrong)
             BgMusic?.start()
             f++
+        }
+        btn.setOnClickListener {
+            BgMusic = MediaPlayer.create(context, sound[4])
+            BgMusic?.start()
         }
     }
 }

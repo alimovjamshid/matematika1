@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.matematika_1.Activity.PlayActivity
 import com.example.matematika_1.R
 import com.example.matematika_1.dialog.RightDialog
 import com.example.matematika_1.dialog.Wrongdialog
@@ -50,10 +51,13 @@ class IkkiFragment : Fragment() {
         image1.setImageResource(img[0])
         image2.setImageResource(img[1])
 
+        val sound:ArrayList<Int> = bundle?.getIntegerArrayList("sound") as ArrayList<Int>
+
         val mFragment = UchFragment()
         val mBundle = Bundle()
         mBundle.putStringArrayList("mText", message)
         mBundle.putIntegerArrayList("image", img)
+        mBundle.putIntegerArrayList("sound", PlayActivity.sound)
         mFragment.arguments = mBundle
 
         image1.setOnClickListener(View.OnClickListener {
@@ -92,8 +96,15 @@ class IkkiFragment : Fragment() {
                 BgMusic?.start()
             }
         })
-        btn.setOnClickListener{
-
+        btn.setOnClickListener {
+            if (i < 1) {
+                BgMusic = MediaPlayer.create(context, sound[0])
+                BgMusic?.start()
+            }
+            else{
+                BgMusic = MediaPlayer.create(context, sound[1])
+                BgMusic?.start()
+            }
         }
 
     }
