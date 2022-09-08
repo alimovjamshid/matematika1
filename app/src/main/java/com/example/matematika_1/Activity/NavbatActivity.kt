@@ -11,7 +11,7 @@ import com.example.matematika_1.R
 import com.example.matematika_1.dialog.RightDialog
 import com.example.matematika_1.dialog.Wrongdialog
 
-class NavbatActivity : PlayActivity() {
+open class NavbatActivity : PlayActivity() {
     private var BgMusic: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class NavbatActivity : PlayActivity() {
 
         var i=0
         val rightDialog = RightDialog()
-        val wrongdialog= Wrongdialog()
+        val wrongdialog = Wrongdialog()
 
         val img1:ImageView=findViewById(R.id.img1)
         val img2:ImageView=findViewById(R.id.img2)
@@ -38,72 +38,83 @@ class NavbatActivity : PlayActivity() {
 
         img2.setOnClickListener {
             i++
-            if(i==1) {
-                t++
-                BgMusic = MediaPlayer.create(this, R.raw.right)
-                BgMusic?.start()
-               // rightDialog.show(this,"dsjakh")
+            when(t){
+                0->{
+                    t++
+                    BgMusic = MediaPlayer.create(this, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.onCreate(Bundle())
 
-                txt.setText(datatext[1])
-                img2.setImageResource(img[2])
-                img3.setImageResource(img[3])
-            }
-            if(i==3) {
-                t++
-                BgMusic = MediaPlayer.create(this, R.raw.right)
-                BgMusic?.start()
-               // rightDialog.show(this,"dsjakh")
+                    txt.setText(datatext[1])
+                    img2.setImageResource(img[3])
+                    img3.setImageResource(img[4])
+                }
+                2->{
+                    t++
+                    BgMusic = MediaPlayer.create(this, R.raw.right)
+                    BgMusic?.start()
+                    // rightDialog.show(this,"dsjakh")
 
-                txt.setText(datatext[1])
-                img2.setImageResource(img[2])
-                img3.setImageResource(img[3])
-            }
-            else{
-                f++
-                //wrongdialog.show(baseContext,"dsjakh")
-                BgMusic = MediaPlayer.create(this, R.raw.wrong)
-                BgMusic?.start()
+                    txt.setText(datatext[3])
+                    img2.setImageResource(img[7])
+                    img3.setImageResource(img[8])
+                }
+                else-> {
+                    f++
+                    //wrongdialog.show(baseContext,"dsjakh")
+                    BgMusic = MediaPlayer.create(this, R.raw.wrong)
+                    BgMusic?.start()
+                }
             }
         }
 
         img3.setOnClickListener {
             i++
-            if(i==2) {
-                t++
-                BgMusic = MediaPlayer.create(this, R.raw.right)
-                BgMusic?.start()
-                //rightDialog.show(this,"dsjakh")
+            when(t){
+                1->{
+                    t++
+                    BgMusic = MediaPlayer.create(this, R.raw.right)
+                    BgMusic?.start()
+                    //rightDialog.show(this,"dsjakh")
 
-                txt.setText(datatext[1])
-                img2.setImageResource(img[2])
-                img3.setImageResource(img[3])
-            }
-            if(i==4) {
-                t++
-                BgMusic = MediaPlayer.create(this, R.raw.right)
-                BgMusic?.start()
-                //rightDialog.show(this,"dsjakh")
+                    txt.setText(datatext[2])
+                    img2.setImageResource(img[5])
+                    img3.setImageResource(img[6])
+                }
+                3->{
+                    t++
+                    BgMusic = MediaPlayer.create(this, R.raw.right)
+                    BgMusic?.start()
+                    //rightDialog.show(this,"dsjakh")
 
-                txt.setText(datatext[1])
-                img2.setImageResource(img[2])
-                img3.setImageResource(img[3])
-            }
-            else{
-                f++
-                //wrongdialog.show(baseContext,"dsjakh")
-                BgMusic = MediaPlayer.create(this, R.raw.wrong)
-                BgMusic?.start()
+                    //txt.setText(datatext[3])
+                    /*img2.setImageResource(img[9])
+                    img3.setImageResource(img[10])*/
+                }
+                else->{
+                    f++
+                    //wrongdialog.show(baseContext,"dsjakh")
+                    BgMusic = MediaPlayer.create(this, R.raw.wrong)
+                    BgMusic?.start()
+                }
             }
         }
 
-
         btn.setOnClickListener {
-            if (i < 1) {
+            if (t == 0) {
                 BgMusic = MediaPlayer.create(this, sound[0])
                 BgMusic?.start()
             }
-            else{
+            if (t == 1) {
                 BgMusic = MediaPlayer.create(this, sound[1])
+                BgMusic?.start()
+            }
+            if (t == 2) {
+                BgMusic = MediaPlayer.create(this, sound[2])
+                BgMusic?.start()
+            }
+            if (t == 3) {
+                BgMusic = MediaPlayer.create(this, sound[3])
                 BgMusic?.start()
             }
         }
