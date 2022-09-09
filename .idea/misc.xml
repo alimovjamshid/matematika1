@@ -7,7 +7,9 @@
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/gradient_bg.xml" value="0.14" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/play.xml" value="0.1725" />
+        <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/refresh.xml" value="0.1725" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/startbtn.xml" value="0.1725" />
+        <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/drawable/volume4.xml" value="0.1725" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout-land/activity_main.xml" value="0.23236331569664903" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.205859375" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/activity_dora.xml" value="0.27447916666666666" />
@@ -21,6 +23,7 @@
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/bronze.xml" value="0.2734375" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/fragment_blank.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/fragment_ikki.xml" value="0.264" />
+        <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/fragment_qoshish.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/fragment_tort.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/fragment_uch.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/jamsh/AndroidStudioProjects/matematika1/app/src/main/res/layout/gold.xml" value="0.27447916666666666" />

@@ -8,6 +8,7 @@ import android.widget.GridView
 import com.example.matematika_1.Adapter.CustomAdapter
 import com.example.matematika_1.Item
 import com.example.matematika_1.R
+import java.lang.Boolean
 
 open class PlayActivity : AppCompatActivity() {
 
@@ -15,6 +16,7 @@ open class PlayActivity : AppCompatActivity() {
         var datatext= ArrayList<String>()
         var img= ArrayList<Int>()
         var sound=ArrayList<Int>()
+        var boolean=ArrayList<Int>()
     }
     lateinit var courseGRV: GridView
     lateinit var courseList: List<Item>
@@ -69,6 +71,10 @@ open class PlayActivity : AppCompatActivity() {
 
             when(position) {
                 0 -> {
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Katta-kichik
                     datatext.clear()
                     datatext.add("Qaysi moshina katta?")
@@ -109,6 +115,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 1->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Baland-past
                     datatext.clear()
                     datatext.add("Qaysi biri baland?")
@@ -149,6 +159,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 2->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Keng-tor
                     datatext.clear()
                     datatext.add("Qaysi daryo keng?")
@@ -189,6 +203,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 3->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Qalin-yupqa
                     datatext.clear()
                     datatext.add("Qaysi kitob qalin?")
@@ -228,6 +246,10 @@ open class PlayActivity : AppCompatActivity() {
                     sound.add(R.raw.d5)
                 }
                 4->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Uzun-qisqa
                     datatext.clear()
                     datatext.add("Uzun qalamni belgilang")
@@ -268,6 +290,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 5->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //doira
                     datatext.clear()
                     datatext.add("Doira shaklini ko'rsating")
@@ -308,6 +334,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 6->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Ko'p-kam
                     datatext.clear()
                     datatext.add("Qaysi rasmdagi jo'jalar ko'p?")
@@ -348,6 +378,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 7->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Barovar-teng
                     datatext.clear()
                     datatext.add("Qaysi biri ko'p?")
@@ -388,6 +422,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 8->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Yaqin-uzoq
                     datatext.clear()
                     datatext.add("Yaqindagi kemani belgilang")
@@ -428,6 +466,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 9->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //yuqori-past
                     datatext.clear()
                     datatext.add("Qaysi biri olmalarni tepadan teryapti?")
@@ -468,6 +510,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 10->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //O'ngda-chapda
                     datatext.clear()
                     datatext.add("O'ng tomonni ko'rsating")
@@ -508,6 +554,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 11->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //uchburchak
                     datatext.clear()
                     datatext.add("Uchburchak shaklini ko'rsating")
@@ -548,6 +598,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 12->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //yonida
                     datatext.clear()
                     datatext.add("Atrofidagi sharni belgilang")
@@ -588,6 +642,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 13->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //togri tortburchak
                     datatext.clear()
                     datatext.add("To'rtburchak shaklini ko'rsating")
@@ -628,6 +686,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 14->{
+
+                    boolean.clear()
+                    boolean.add(0)
+
                     //birinchi va oxirgi
                     datatext.clear()
                     datatext.add("Tepadagi rasmdan qaysi biri birinchi?")
@@ -658,10 +720,14 @@ open class PlayActivity : AppCompatActivity() {
                     sound.add(R.raw.ba3)
                     sound.add(R.raw.ba4)
 
-                    val intent=Intent(this,NavbatActivity::class.java)
+                    val intent=Intent(this,TestActivity::class.java)
                     startActivity(intent)
                 }
                 15->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //ogir yengil
                     datatext.clear()
                     datatext.add("Qaysi biri og'ir?")
@@ -702,6 +768,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 16->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //ertalab kunduzi
                     datatext.clear()
                     datatext.add("Badan tarbiyani vaqtini ko'rsating")
@@ -742,6 +812,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 17->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //qo'shish - ayirish
                     datatext.clear()
                     datatext.add("2 ta mushukka 1 ta mushukni qo'shsak qancha bo'ladi?")
@@ -782,6 +856,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 18->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Kvadrat
                     datatext.clear()
                     datatext.add("Kvadrat shaklini ko'rsating")
@@ -822,6 +900,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 19->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //1 soni va raqami
                     datatext.clear()
                     datatext.add("Bir sonini belgilang")
@@ -862,6 +944,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 20->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Nuqta va chiziq
                     datatext.clear()
                     datatext.add("Nuqtani belgilang")
@@ -902,6 +988,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 21->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //2 soni va raqami
                     datatext.clear()
                     datatext.add("Ikki sonini belgilang")
@@ -942,6 +1032,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 22->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //3 soni va raqami
                     datatext.clear()
                     datatext.add("Uch sonini belgilang")
@@ -982,6 +1076,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 23->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //4 soni va raqami
                     datatext.clear()
                     datatext.add("To'rt sonini belgilang")
@@ -1022,6 +1120,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 24->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //5 soni va raqami
                     datatext.clear()
                     datatext.add("Besh sonini belgilang")
@@ -1062,6 +1164,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 25->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //0 soni va raqami
                     datatext.clear()
                     datatext.add("Nol sonini belgilang")
@@ -1102,6 +1208,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 26->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //6 soni va raqami
                     datatext.clear()
                     datatext.add("Olti sonini belgilang")
@@ -1142,6 +1252,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 27->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //7 soni va raqami
                     datatext.clear()
                     datatext.add("Yetti sonini belgilang")
@@ -1182,6 +1296,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 28->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //8 soni va raqami
                     datatext.clear()
                     datatext.add("Sakkiz sonini belgilang")
@@ -1222,6 +1340,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 29->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //To'g'ri chiziq yasash
                     datatext.clear()
                     datatext.add("Qaysi biri to'g'ri chiziq?")
@@ -1262,6 +1384,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 30->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //Shar va kub
                     datatext.clear()
                     datatext.add("Qaysi biri kubga misol?")
@@ -1302,6 +1428,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 31->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //9 soni va raqami
                     datatext.clear()
                     datatext.add("To'qqiz sonini belgilang")
@@ -1342,6 +1472,10 @@ open class PlayActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 32->{
+
+                    boolean.clear()
+                    boolean.add(1)
+
                     //10 soni va raqami
                     datatext.clear()
                     datatext.add("O'n sonini belgilang")
