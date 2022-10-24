@@ -7,11 +7,11 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.matematika_1"
+        applicationId "com.math.matematika_1"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 

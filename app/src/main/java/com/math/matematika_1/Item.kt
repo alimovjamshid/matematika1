@@ -1,3 +1,3 @@
-package com.example.matematika_1
+package com.math.matematika_1
 
 class Item(var name: String?, var image: Int?)

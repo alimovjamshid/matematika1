@@ -1,4 +1,4 @@
-package com.example.matematika_1.dialog
+package com.math.matematika_1.dialog
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -10,8 +10,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import com.example.matematika_1.R
-import com.example.matematika_1.activity.PlayActivity
-import com.example.matematika_1.activity.TestActivity
+import com.math.matematika_1.activity.PlayActivity
+import com.math.matematika_1.activity.TestActivity
 
 class MondatDialog : Fragment() {
 

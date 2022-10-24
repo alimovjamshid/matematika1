@@ -1,9 +1,9 @@
-package com.example.matematika_1.activity
+package com.math.matematika_1.activity
 
 
 import android.os.Bundle
-import com.example.matematika_1.fragment.IkkiFragment
-import com.example.matematika_1.fragment.QoshishFragment
+import com.math.matematika_1.fragment.IkkiFragment
+import com.math.matematika_1.fragment.QoshishFragment
 import com.example.matematika_1.R
 
 

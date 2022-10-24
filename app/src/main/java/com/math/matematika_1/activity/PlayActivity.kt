@@ -1,12 +1,12 @@
-package com.example.matematika_1.activity
+package com.math.matematika_1.activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.GridView
-import com.example.matematika_1.adapter.CustomAdapter
-import com.example.matematika_1.Item
+import com.math.matematika_1.adapter.CustomAdapter
+import com.math.matematika_1.Item
 import com.example.matematika_1.R
 
 open class PlayActivity : AppCompatActivity() {
@@ -719,7 +719,7 @@ open class PlayActivity : AppCompatActivity() {
                     sound.add(R.raw.ba3)
                     sound.add(R.raw.ba4)
 
-                    val intent=Intent(this,TestActivity::class.java)
+                    val intent=Intent(this, TestActivity::class.java)
                     startActivity(intent)
                 }
                 15->{

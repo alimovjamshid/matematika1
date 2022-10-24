@@ -1,4 +1,4 @@
-package com.example.matematika_1.adapter
+package com.math.matematika_1.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.matematika_1.Item
+import com.math.matematika_1.Item
 import com.example.matematika_1.R
 
 @Suppress("NAME_SHADOWING")

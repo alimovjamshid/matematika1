@@ -1,4 +1,4 @@
-package com.example.matematika_1.activity
+package com.math.matematika_1.activity
 
 import android.content.Intent
 import android.os.Bundle

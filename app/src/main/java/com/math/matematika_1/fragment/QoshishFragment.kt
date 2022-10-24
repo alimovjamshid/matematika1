@@ -1,4 +1,4 @@
-package com.example.matematika_1.fragment
+package com.math.matematika_1.fragment
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -9,11 +9,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.matematika_1.activity.PlayActivity
+import com.math.matematika_1.activity.PlayActivity
 import com.example.matematika_1.R
-import com.example.matematika_1.dialog.MondatDialog
-import com.example.matematika_1.dialog.RightDialog
-import com.example.matematika_1.dialog.Wrongdialog
+import com.math.matematika_1.dialog.MondatDialog
+import com.math.matematika_1.dialog.RightDialog
+import com.math.matematika_1.dialog.Wrongdialog
 
 class QoshishFragment : Fragment() {
     private var BgMusic: MediaPlayer? = null

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,17 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Matematika1"
-        tools:targetApi="32">
+        tools:targetApi="33">
         <activity
-            android:name=".activity.TestActivity"
+            android:name="com.math.matematika_1.activity.TestActivity"
             android:exported="false"
-            android:parentActivityName=".activity.PlayActivity" />
+            android:parentActivityName="com.math.matematika_1.activity.PlayActivity" />
         <activity
-            android:name=".activity.PlayActivity"
+            android:name="com.math.matematika_1.activity.PlayActivity"
             android:exported="false"
-            android:parentActivityName=".activity.MainActivity" />
+            android:parentActivityName="com.math.matematika_1.activity.MainActivity" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.math.matematika_1.activity.MainActivity"
             android:exported="true"
             android:theme="@style/Mytheme">
             <intent-filter>

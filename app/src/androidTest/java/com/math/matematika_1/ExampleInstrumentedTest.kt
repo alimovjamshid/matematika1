@@ -1,4 +1,4 @@
-package com.example.matematika_1
+package com.math.matematika_1
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
